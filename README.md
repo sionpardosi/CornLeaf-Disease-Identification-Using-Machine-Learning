@@ -14,8 +14,6 @@ Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrogram
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 - **500 gambar** dan **10 video** daun jagung.
 - Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **Jamur**, **Karat**, dan **Sehat**.
-- Hasil pengujian menunjukkan model CNN memiliki akurasi sebesar **98%**, sementara SVM memperoleh **87%**. 
-- **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** dan **Visual Studio Code** sebagai teks editor utama.
 
 ### Fitur Utama
 
@@ -24,14 +22,9 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 - **Model Machine Learning**: Algoritma **CNN** dan **SVM** diterapkan untuk klasifikasi gambar.
 - **Evaluasi Model**: Pengukuran akurasi menggunakan **precision**, **recall**, **F1-score**, dan **confusion matrix** untuk hasil yang optimal.
 
-### Tujuan Proyek
-
-1. Mengembangkan model klasifikasi penyakit tanaman berbasis **Machine Learning** untuk gambar daun jagung.
-2. Meningkatkan efisiensi dan kecepatan deteksi penyakit di lapangan.
-3. Menyediakan solusi berbasis teknologi yang dapat diadopsi oleh petani atau pakar pertanian dalam skala besar.
-
 ### Teknologi yang Digunakan
 
+- **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** dan **Visual Studio Code** sebagai teks editor utama.
 - **Python**: Bahasa pemrograman utama untuk pengembangan model.
 - **TensorFlow** atau **PyTorch**: Framework untuk membangun model CNN.
 - **OpenCV**: Digunakan untuk pemrosesan citra dan augmentasi gambar.
