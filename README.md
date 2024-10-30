@@ -13,7 +13,7 @@ Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrogram
 ### Pengumpulan Data
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 - **500 gambar** dan **10 video** daun jagung.
-- Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **Jamur**, **Karat**, dan **Sehat**.
+- Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **bercak daun**, **Karat**, dan **Sehat**.
 
 ### Fitur Utama
 
