@@ -41,4 +41,4 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
   
 ---
 
-Dengan adanya sistem ini, diharapkan proses diagnosis penyakit tanaman jagung dapat dilakukan lebih cepat, efisien, dan dapat diandalkan dalam skala besar.
+Dengan adanya sistem ini, diharapkan proses diagnosis penyakit tanaman jagung dapat dilakukan lebih cepat dan efisien.
