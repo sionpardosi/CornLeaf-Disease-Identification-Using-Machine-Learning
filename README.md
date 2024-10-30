@@ -24,7 +24,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ### Teknologi yang Digunakan
 
-- **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** dan **Visual Studio Code** sebagai teks editor utama.
+- **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** / **Google Colab** dan **Visual Studio Code** sebagai teks editor utama.
 - **Python**: Bahasa pemrograman utama untuk pengembangan model.
 - **TensorFlow** atau **PyTorch**: Framework untuk membangun model CNN.
 - **OpenCV**: Digunakan untuk pemrosesan citra dan augmentasi gambar.
@@ -38,7 +38,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 - **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri dari setiap jenis penyakit melalui proses iteratif.
 - **Pengujian**: Model yang telah dilatih diuji dengan dataset uji untuk mengukur akurasi dan performanya dalam mendeteksi penyakit.
 - **Evaluasi** -> Coming Soon
-- 
+  
 ---
 
 Dengan adanya sistem ini, diharapkan proses diagnosis penyakit tanaman jagung dapat dilakukan lebih cepat, efisien, dan dapat diandalkan dalam skala besar.
