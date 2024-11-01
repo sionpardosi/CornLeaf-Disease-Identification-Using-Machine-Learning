@@ -15,7 +15,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 - **500 gambar** dan **10 video** daun jagung.
 - Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **bercak daun**, **Karat**, dan **Sehat**.
 ###**Bukti Pengumpulan Data**
-![halaman berita](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi.jpg)
+![Bukti Observasi](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi%20-%20Copy.jpg)
 
 ### Fitur Utama
 
