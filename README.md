@@ -31,7 +31,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 - **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** / **Google Colab** dan **Visual Studio Code** sebagai teks editor utama.
 - **Python**: Bahasa pemrograman utama untuk pengembangan model.
-- **TensorFlow** atau **PyTorch**: Framework untuk membangun model CNN.
+- **TensorFlow**: Framework untuk membangun model CNN.
 - **OpenCV**: Digunakan untuk pemrosesan citra dan augmentasi gambar.
 - **Matplotlib**: Untuk visualisasi hasil dan evaluasi model.
 
