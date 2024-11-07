@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning - On Progress
 
 *Identification of corn leaf diseases using machine learning technology* - On Progress
