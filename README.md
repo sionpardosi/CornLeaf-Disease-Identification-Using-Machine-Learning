@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning - On Progress
+=======
+# Identifikasi jenis penyakit tanaman pada daun jagung menggunakan teknologi machine learning 
+
+*Identification of corn leaf diseases using machine learning technology*
+>>>>>>> b127e235e6f99f51d74cdb002990e29a5ac18b9b
 
 Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Support Vector Machine (SVM)**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, yang akan meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
 
@@ -14,8 +20,9 @@ Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrogram
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 - **500 gambar** dan **10 video** daun jagung.
 - Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **bercak daun**, **Karat**, dan **Sehat**.
-###**Bukti Pengumpulan Data**
-![halaman berita](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi.jpg)
+  
+### **Bukti Observasi Langsung**
+![Bukti Observasi](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi%20-%20Copy.jpg)
 
 ### Fitur Utama
 
@@ -28,7 +35,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 - **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** / **Google Colab** dan **Visual Studio Code** sebagai teks editor utama.
 - **Python**: Bahasa pemrograman utama untuk pengembangan model.
-- **TensorFlow** atau **PyTorch**: Framework untuk membangun model CNN.
+- **TensorFlow**: Framework untuk membangun model CNN.
 - **OpenCV**: Digunakan untuk pemrosesan citra dan augmentasi gambar.
 - **Matplotlib**: Untuk visualisasi hasil dan evaluasi model.
 
