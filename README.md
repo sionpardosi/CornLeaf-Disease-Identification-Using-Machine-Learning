@@ -1,6 +1,6 @@
 # Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning - On Progress
 
-*Identification of corn leaf diseases using machine learning technology* - On Progress.
+*Identification of corn leaf diseases using machine learning technology* - On Progress
 
 Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Support Vector Machine (SVM)**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, yang akan meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
 
