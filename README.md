@@ -1,4 +1,4 @@
-# Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learninh
+# Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learnin
 
 *Identification of corn leaf diseases using machine learning technology* 
 
