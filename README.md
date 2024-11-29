@@ -51,7 +51,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ---
 
-### Hasil (Coming Soon)
+### Hasil (Coming Soon!)
 
 - **Preprocessing**: Tahapan ini mengolah citra untuk mempermudah algoritma CNN dan SVM dalam proses training, dengan menggunakan augmentasi data seperti rescale, rotate, zoom, dan flip.
 - **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri dari setiap jenis penyakit melalui proses iteratif.
