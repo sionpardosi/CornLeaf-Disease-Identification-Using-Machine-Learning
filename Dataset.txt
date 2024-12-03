@@ -1,0 +1,7 @@
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="sFsgBqWcv09QR1Yku5mC")
+project = rf.workspace("sion-pardosi-hbf7k").project("corn-leaf-diseases-fwxhl")
+version = project.version(3)
+dataset = version.download("folder")
