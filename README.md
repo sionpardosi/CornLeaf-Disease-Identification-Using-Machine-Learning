@@ -67,9 +67,33 @@ Teknik deteksi tepi menggunakan Canny digunakan untuk memvisualisasikan detail d
 ![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
 
 # Evaluasi Model
+
+
 ### Evaluasi Model pada Data Validasi (Visualisasi Validation Accuracy)
 Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*. Hasil evaluasi ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya.
 ![Visualisasi Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
+
+### Evaluasi Model dengan ... (Visualisasi....)
+1. **Persiapan Data Uji**:
+   - Data uji diproses dengan `ImageDataGenerator` untuk rescaling gambar.
+   - Generator `test_gen` digunakan untuk memuat data uji dan menyiapkannya untuk prediksi.
+
+2. **Evaluasi Model**:
+   - Model dievaluasi menggunakan `model.evaluate()`, yang menghasilkan skor akurasi dan loss pada data uji.
+
+3. **Prediksi dan Matriks Evaluasi**:
+   - Menggunakan model untuk memprediksi kelas gambar uji.
+   - Menghitung **Confusion Matrix** untuk menilai distribusi prediksi.
+   - Menampilkan **Classification Report** yang mencakup Precision, Recall, dan F1-Score.
+   - Menampilkan hasil precision, recall, dan f1-score secara manual untuk evaluasi lebih lanjut.
+
+4. **Visualisasi**:
+   - Menampilkan **Confusion Matrix** menggunakan `seaborn` untuk memvisualisasikan prediksi vs. label sebenarnya.
+
+![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
+
+
+
 
 
 ### Teknologi yang Digunakan
