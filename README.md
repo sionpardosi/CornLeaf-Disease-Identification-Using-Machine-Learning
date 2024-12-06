@@ -39,7 +39,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 ## **Fitur Utama**
 
 - **Deteksi Penyakit Daun Jagung**: Mengidentifikasi penyakit seperti _Hawar Daun_, _Bercak Daun_, dan _Karat_.  
-- **Pemrosesan Citra dengan OpenCV**: Melakukan augmentasi data untuk memperkaya dataset dan mencegah overfitting.  
+- **Pemrosesan Citra**: Melakukan augmentasi data untuk memperkaya dataset dan mencegah overfitting.  
 - **Model Machine Learning**:  
   - **Convolutional Neural Network (CNN)**  
   - **Transfer Learning DenseNet121**  
