@@ -113,7 +113,7 @@ Teknik **Canny Edge Detection** digunakan untuk memvisualisasikan fitur penting 
 
 # Evaluasi Model
 
-### **Evaluasi Model pada Data Validasi**:
+### **Evaluasi Model pada Data Validasi (Visualisasi Validation Accuracy)**:
 
 Model dievaluasi dengan data validasi untuk mengukur *loss* dan *accuracy*. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
 
@@ -122,8 +122,11 @@ Model dievaluasi dengan data validasi untuk mengukur *loss* dan *accuracy*. Ini 
 ### **Evaluasi dengan Confusion Matrix**:
 
 Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, memberikan wawasan lebih mendalam tentang kesalahan klasifikasi.
+Menghitung **Confusion Matrix** untuk menilai distribusi prediksi, Menampilkan **Classification Report** yang mencakup Precision, Recall, dan F1-Score, Menampilkan hasil precision, recall, dan f1-score.
 
 ![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix.png)
+
+![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report.png)
 
 ---
 
@@ -139,7 +142,10 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 ![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Accuracy.png)
 
+![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20per%20Epoch.png)
+
 ---
+
 
 # **Hasil**
 
