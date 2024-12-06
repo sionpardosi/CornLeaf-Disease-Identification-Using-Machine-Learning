@@ -124,6 +124,9 @@ Model dievaluasi dengan data validasi untuk mengukur *loss* dan *accuracy*. Ini 
 Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, memberikan wawasan lebih mendalam tentang kesalahan klasifikasi.
 -> Menghitung **Confusion Matrix** untuk menilai distribusi prediksi, Menampilkan **Classification Report** yang mencakup Precision, Recall, dan F1-Score, Menampilkan hasil precision, recall, dan f1-score.
 
+#### **Rumus Masing Masing Parameter**:
+![Rumus](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Rumus%20Confusion%20Matrix.png)
+
 ![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix.png)
 
 ![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report.png)
