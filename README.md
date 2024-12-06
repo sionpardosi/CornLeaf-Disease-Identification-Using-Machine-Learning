@@ -23,7 +23,7 @@ Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrogram
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 
 - **5368 gambar** dan **10 video** daun jagung.
-- Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **Bercak Daun**, **Karat**, dan **Sehat**.
+- Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar Daun**, **Bercak Daun**, **Karat**, dan **Sehat**.
 
 ---
 
@@ -35,9 +35,10 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 ### Fitur Utama
 
 - **Deteksi Penyakit Daun Jagung**: Mengidentifikasi penyakit seperti _Bercak Daun_ (Leaf Spot), _Karat Jagung_ (Rust), dan _Hawar Daun_ (Blight).
-- **Pemrosesan Citra - Roboflow / OpenCV**: Augmentasi gambar untuk memperkaya dataset dan menghindari overfitting, termasuk proses **rescale**, **rotate**, **zoom**, dan **flip**.
+- **Pemrosesan Citra - Roboflow / OpenCV**: Augmentasi gambar untuk memperkaya dataset dan menghindari overfitting, termasuk proses **rescale**, **rotate**, **zoom**, untuk selengkapnya dan dapat dilihat di bagian **AUGMENTASI**.
 - **Model Machine Learning**: Algoritma **CNN** dan **Transfer Learning DenseNet121** diterapkan untuk klasifikasi gambar.
 - **Evaluasi Model**: Pengukuran akurasi menggunakan **precision**, **recall**, **F1-score**, dan **confusion matrix** untuk hasil yang optimal.
+- **Performance**:
 
 ---
 
@@ -59,9 +60,9 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ---
 
-### Preprocessing dan Augmentasi Gambar dengan Roboflow
+### Preprocessing dan Augmentasi Gambar dengan Roboflow & OpenCV
 
-Untuk memastikan gambar berada dalam format yang sesuai dan meningkatkan akurasi model, kami menggunakan **Roboflow** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah teknik yang diterapkan:
+Untuk memastikan gambar berada dalam format yang sesuai dan meningkatkan akurasi model, kami menggunakan **Roboflow** & **OpenCV** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah teknik yang diterapkan:
 
 #### **Preprocessing**:
 
@@ -103,16 +104,13 @@ Teknik **Canny Edge Detection** digunakan untuk memvisualisasikan fitur penting 
 
 ---
 
-### Hasil
+# Hasil
 
-- **Preprocessing**: Tahapan ini mempersiapkan gambar untuk algoritma CNN dan SVM dengan augmentasi data seperti rescale, rotate, zoom, dan flip.
-- **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri setiap jenis penyakit.
-- **Pengujian**: Model yang telah dilatih diuji dengan dataset uji untuk mengukur akurasi dan performa deteksi.
 - **Evaluasi**: Menilai hasil menggunakan metrik seperti confusion matrix, precision, recall, dan F1-score.
-
+- **Performance**: 
 ---
 
-### Evaluasi Model
+# Evaluasi Model
 
 #### **Evaluasi Model pada Data Validasi**:
 
@@ -128,6 +126,8 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 ---
 
+# Perfomance
+
 ### Performance: Evaluasi Overfitting
 
 1. **Plot Loss**: Menampilkan perbandingan antara **Training Loss** dan **Validation Loss**.
@@ -140,24 +140,27 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 ---
 
-### Prediction: Prediksi Gambar Tunggal
+# Prediction
 
+### Prediction: Predict and Visualize a Single Image
 Melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilatih dan visualisasikan hasil prediksi dengan label kelasnya:
 
 ![Visualisasi Prediction](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Prediction.png)
 
 ---
 
-### Kesimpulan
+## Kesimpulan
 
 Model CNN dan **DenseNet121** telah menunjukkan potensi yang sangat baik dalam mendeteksi penyakit daun jagung dengan tingkat akurasi yang memadai. Penelitian ini membuka jalan untuk pengembangan sistem deteksi otomatis berbasis AI dalam pertanian untuk mempermudah dan mempercepat diagnosis penyakit tanaman jagung.
 
 ---
 
-### Kontak
+## Kontak
 
-Jika ada pertanyaan lebih lanjut, silakan hubungi saya melalui email di **[email@example.com]**.
+Jika ada pertanyaan lebih lanjut, silakan hubungi saya melalui email di **[spardosi12@gmail.com]**.
 
 ---
 
-Terima kasih telah membaca!
+## License
+
+This project is licensed under the [MIT License](LICENSE).
