@@ -2,19 +2,19 @@
 
 *Identification of corn leaf diseases using machine learning technology* 
 
-Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Support Vector Machine (SVM)**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, yang akan meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
+Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, yang akan meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
 
 ### Deskripsi Proyek
 Penelitian ini bertujuan untuk:
 1. Mengembangkan metode deteksi penyakit tanaman jagung melalui citra daun.
-2. Menguji dan membandingkan akurasi model **CNN** dan **SVM**.
+2. Menguji dan membandingkan akurasi model **CNN** dan **Model Transfer Learning DenseNet121**.
 3. Mengimplementasikan model dengan akurasi tertinggi pada sistem deteksi penyakit berbasis citra.
 
 Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrograman **Python** untuk memungkinkan integrasi dan pengujian model deteksi penyakit secara fleksibel.
 
 ### Pengumpulan Data
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
-- **2000 gambar** dan **10 video** daun jagung.
+- **5368 gambar** dan **10 video** daun jagung.
 - Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **bercak daun**, **Karat**, dan **Sehat**.
   
 ### **Bukti Observasi Langsung**
@@ -24,7 +24,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 - **Deteksi Penyakit Daun Jagung**: Mengidentifikasi penyakit seperti _Bercak Daun_ (Leaf Spot), _Karat Jagung_ (Rust), dan _Hawar Daun_ (Blight).
 - **Pemrosesan Citra - Roboflow / OpenCV**: Augmentasi gambar untuk memperkaya dataset dan menghindari overfitting, termasuk proses **rescale**, **rotate**, **zoom**, dan **flip**.
-- **Model Machine Learning**: Algoritma **CNN** dan **SVM** diterapkan untuk klasifikasi gambar.
+- **Model Machine Learning**: Algoritma **CNN** dan **Transfer Learning DenseNet121** diterapkan untuk klasifikasi gambar.
 - **Evaluasi Model**: Pengukuran akurasi menggunakan **precision**, **recall**, **F1-score**, dan **confusion matrix** untuk hasil yang optimal.
 
 ### Teknologi yang Digunakan
