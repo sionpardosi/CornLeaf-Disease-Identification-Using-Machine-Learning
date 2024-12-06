@@ -27,6 +27,13 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 - **Model Machine Learning**: Algoritma **CNN** dan **Transfer Learning DenseNet121** diterapkan untuk klasifikasi gambar.
 - **Evaluasi Model**: Pengukuran akurasi menggunakan **precision**, **recall**, **F1-score**, dan **confusion matrix** untuk hasil yang optimal.
 
+- **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** / **Google Colab** dan **Visual Studio Code** sebagai teks editor utama.
+- **Python**: Bahasa pemrograman utama untuk pengembangan model.
+- **TensorFlow**: Framework untuk membangun model CNN.
+- **OpenCV / Roboflow**: Digunakan untuk pemrosesan citra dan augmentasi gambar.
+- **Matplotlib**: Untuk visualisasi hasil dan evaluasi model.
+
+
 ### Preprocessing dan Augmentasi Gambar dengan Roboflow
 
 Dalam proyek ini, kami menggunakan **Roboflow** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah langkah-langkah yang diterapkan untuk mempersiapkan gambar sebelum digunakan dalam pelatihan model.
@@ -65,6 +72,15 @@ Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk mendap
 # Penerapan Canny Edge Detection
 Teknik deteksi tepi menggunakan Canny digunakan untuk memvisualisasikan detail dan fitur-fitur penting pada gambar daun jagung. Ini dapat membantu model untuk memfokuskan pada fitur yang relevan selama pelatihan.
 ![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
+
+### Hasil 
+
+- **Preprocessing**: Tahapan ini mengolah citra untuk mempermudah algoritma CNN dan SVM dalam proses training, dengan menggunakan augmentasi data seperti rescale, rotate, zoom, dan flip.
+- **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri dari setiap jenis penyakit melalui proses iteratif.
+- **Pengujian**: Model yang telah dilatih diuji dengan dataset uji untuk mengukur akurasi dan performanya dalam mendeteksi penyakit.
+- **Evaluasi** 
+  
+---
 
 # Evaluasi Model
 
@@ -126,7 +142,7 @@ Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*.
 
 ![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20per%20Epoch.png)
 
-# ### Prediction
+# Prediction
 ### Prediction: Predict and Visualize a Single Image
 melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilatih. Selain itu, hasil prediksi juga divisualisasikan bersama dengan label kelasnya.
 ![Visualisasi Prediction](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Prediction.png)
@@ -148,22 +164,8 @@ melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilati
     <img src="https://img.shields.io/badge/Editor-Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white" />
 </p>
 
-- **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** / **Google Colab** dan **Visual Studio Code** sebagai teks editor utama.
-- **Python**: Bahasa pemrograman utama untuk pengembangan model.
-- **TensorFlow**: Framework untuk membangun model CNN.
-- **OpenCV / Roboflow**: Digunakan untuk pemrosesan citra dan augmentasi gambar.
-- **Matplotlib**: Untuk visualisasi hasil dan evaluasi model.
-
 ---
 
-### Hasil 
-
-- **Preprocessing**: Tahapan ini mengolah citra untuk mempermudah algoritma CNN dan SVM dalam proses training, dengan menggunakan augmentasi data seperti rescale, rotate, zoom, dan flip.
-- **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri dari setiap jenis penyakit melalui proses iteratif.
-- **Pengujian**: Model yang telah dilatih diuji dengan dataset uji untuk mengukur akurasi dan performanya dalam mendeteksi penyakit.
-- **Evaluasi** -> Coming Soon
-  
----
 
 Dengan adanya sistem ini, diharapkan proses diagnosis penyakit tanaman jagung dapat dilakukan lebih cepat dan efisien.
 
