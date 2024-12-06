@@ -145,7 +145,7 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 Melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilatih dan visualisasikan hasil prediksi dengan label kelasnya:
 
 ![Visualisasi Prediction](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Prediction.png)
-
+a
 ---
 
 ### Kesimpulan
