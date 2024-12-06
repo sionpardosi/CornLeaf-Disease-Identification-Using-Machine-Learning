@@ -42,7 +42,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ---
 
-### Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 #### **Tools:**
 <p>
@@ -60,7 +60,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ---
 
-### Preprocessing dan Augmentasi Gambar dengan Roboflow & OpenCV
+# Preprocessing dan Augmentasi Gambar dengan Roboflow & OpenCV
 
 Untuk memastikan gambar berada dalam format yang sesuai dan meningkatkan akurasi model, kami menggunakan **Roboflow** & **OpenCV** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah teknik yang diterapkan:
 
