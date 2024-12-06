@@ -1,24 +1,36 @@
 # Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning
 
-*Identification of corn leaf diseases using machine learning technology* 
+**Identification of corn leaf diseases using machine learning technology**
 
-Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, yang akan meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
+Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
+
+---
 
 ### Deskripsi Proyek
+
 Penelitian ini bertujuan untuk:
+
 1. Mengembangkan metode deteksi penyakit tanaman jagung melalui citra daun.
 2. Menguji dan membandingkan akurasi model **CNN** dan **Model Transfer Learning DenseNet121**.
 3. Mengimplementasikan model dengan akurasi tertinggi pada sistem deteksi penyakit berbasis citra.
 
 Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrograman **Python** untuk memungkinkan integrasi dan pengujian model deteksi penyakit secara fleksibel.
 
+---
+
 ### Pengumpulan Data
+
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
+
 - **5368 gambar** dan **10 video** daun jagung.
-- Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **bercak daun**, **Karat**, dan **Sehat**.
-  
+- Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar**, **Bercak Daun**, **Karat**, dan **Sehat**.
+
+---
+
 ### **Bukti Observasi Langsung**
 ![Bukti Observasi](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi%20-%20Copy.jpg)
+
+---
 
 ### Fitur Utama
 
@@ -27,130 +39,11 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 - **Model Machine Learning**: Algoritma **CNN** dan **Transfer Learning DenseNet121** diterapkan untuk klasifikasi gambar.
 - **Evaluasi Model**: Pengukuran akurasi menggunakan **precision**, **recall**, **F1-score**, dan **confusion matrix** untuk hasil yang optimal.
 
-- **Confusion matrix** digunakan untuk mengukur akurasi model, dan pengujian dilakukan menggunakan **Jupyter Notebook** / **Google Colab** dan **Visual Studio Code** sebagai teks editor utama.
-- **Python**: Bahasa pemrograman utama untuk pengembangan model.
-- **TensorFlow**: Framework untuk membangun model CNN.
-- **OpenCV / Roboflow**: Digunakan untuk pemrosesan citra dan augmentasi gambar.
-- **Matplotlib**: Untuk visualisasi hasil dan evaluasi model.
-
-
-### Preprocessing dan Augmentasi Gambar dengan Roboflow
-
-Dalam proyek ini, kami menggunakan **Roboflow** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah langkah-langkah yang diterapkan untuk mempersiapkan gambar sebelum digunakan dalam pelatihan model.
-
-#### Preprocessing
-
-Preprocessing adalah tahap penting yang dilakukan untuk memastikan gambar berada dalam format dan ukuran yang sesuai dengan kebutuhan model. Berikut adalah beberapa teknik preprocessing yang diterapkan:
-
-1. **Auto-Orient:** Menyesuaikan orientasi gambar untuk memastikan gambar dalam posisi yang benar dan tidak terbalik.
-2. **Static Crop:** Gambar dipotong pada area tertentu untuk memperkecil fokus:
-   - **Horizontal Region:** Pemotongan dilakukan pada **25%-75%** bagian horizontal gambar.
-   - **Vertical Region:** Pemotongan dilakukan pada **27%-75%** bagian vertikal gambar.
-3. **Resize:** Gambar akan diubah ukurannya menjadi **640x640** piksel untuk memastikan ukuran input yang konsisten pada model.
-
-#### Augmentasi
-
-Untuk memperkaya dataset dan meningkatkan akurasi model, augmentasi gambar digunakan. Dengan Roboflow, kami dapat melakukan berbagai augmentasi secara otomatis, seperti:
-
-1. **Outputs per Training Example:** Untuk setiap gambar dalam dataset, Roboflow menghasilkan **3 output gambar** yang berbeda untuk meningkatkan variasi dalam data pelatihan.
-2. **Flip Horizontal:** Melakukan flip gambar secara horizontal (spion kiri-kanan) untuk menciptakan variasi dalam orientasi objek.
-3. **Grayscale:** 15% dari gambar diterapkan dengan filter grayscale untuk menambah variasi dalam warna gambar.
-4. **Hue:** Perubahan hue gambar dilakukan dalam rentang **-25° hingga +25°** untuk variasi warna.
-5. **Saturation:** Saturasi gambar disesuaikan antara **-25% hingga +25%** untuk variasi kecerahan warna.
-6. **Brightness:** Kecerahan gambar diubah dalam rentang **-25% hingga +25%**.
-7. **Exposure:** Exposure gambar disesuaikan antara **-12% hingga +12%** untuk perubahan kontras.
-8. **Crop:** Gambar akan dipotong secara acak untuk meningkatkan variasi objek yang terlihat dalam gambar.
-9. **90 Derajat Rotation:** Gambar akan diputar 90 derajat untuk meningkatkan variasi sudut pandang gambar.
-
-Dengan menggunakan Roboflow, semua augmentasi ini diterapkan secara otomatis dan sangat membantu dalam memperkaya dataset dan mencegah overfitting selama pelatihan model.
-
-
-# Visualisasi Data Gambar
-Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk mendapatkan gambaran yang lebih baik mengenai kelas-kelas yang ada dalam dataset.
-![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)
-
-# Penerapan Canny Edge Detection
-Teknik deteksi tepi menggunakan Canny digunakan untuk memvisualisasikan detail dan fitur-fitur penting pada gambar daun jagung. Ini dapat membantu model untuk memfokuskan pada fitur yang relevan selama pelatihan.
-![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
-
-### Hasil 
-
-- **Preprocessing**: Tahapan ini mengolah citra untuk mempermudah algoritma CNN dan SVM dalam proses training, dengan menggunakan augmentasi data seperti rescale, rotate, zoom, dan flip.
-- **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri dari setiap jenis penyakit melalui proses iteratif.
-- **Pengujian**: Model yang telah dilatih diuji dengan dataset uji untuk mengukur akurasi dan performanya dalam mendeteksi penyakit.
-- **Evaluasi** 
-  
 ---
-
-# Evaluasi Model
-
-
-### Evaluasi Model pada Data Validasi (Visualisasi Validation Accuracy)
-Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*. Hasil evaluasi ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya.
-![Visualisasi Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
-
-### Evaluasi Model dengan ... (Visualisasi....)
-1. **Persiapan Data Uji**:
-   - Data uji diproses dengan `ImageDataGenerator` untuk rescaling gambar.
-   - Generator `test_gen` digunakan untuk memuat data uji dan menyiapkannya untuk prediksi.
-
-2. **Evaluasi Model**:
-   - Model dievaluasi menggunakan `model.evaluate()`, yang menghasilkan skor akurasi dan loss pada data uji.
-
-3. **Prediksi dan Matriks Evaluasi**:
-   - Menggunakan model untuk memprediksi kelas gambar uji.
-   - Menghitung **Confusion Matrix** untuk menilai distribusi prediksi.
-   - Menampilkan **Classification Report** yang mencakup Precision, Recall, dan F1-Score.
-   - Menampilkan hasil precision, recall, dan f1-score secara manual untuk evaluasi lebih lanjut.
-
-4. **Visualisasi**:
-   - Menampilkan **Confusion Matrix** menggunakan `seaborn` untuk memvisualisasikan prediksi vs. label sebenarnya.
-
-![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix.png)
-![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report.png)
-
-
-# Performance
-### Performance: Evaluasi Overfitting
-1. **Plot Loss**:
-   - Grafik pertama menunjukkan perbandingan antara **Training Loss** dan **Validation Loss** selama proses pelatihan.
-   - Jika model mengalami **overfitting**, kita akan melihat **loss validation** yang lebih tinggi dibandingkan **training loss** di akhir pelatihan.
-
-2. **Plot Akurasi**:
-   - Grafik kedua menunjukkan perbandingan antara **Training Accuracy** dan **Validation Accuracy**.
-   - Jika model **overfitting**, akurasi pelatihan akan terus meningkat, sementara akurasi validasi bisa stagnan atau menurun.
-
-3. **Interpretasi**:
-   - Berdasarkan hasil, jika kedua grafik menunjukkan perilaku yang konsisten antara pelatihan dan validasi tanpa adanya perbedaan signifikan, ini menunjukkan bahwa model tidak mengalami overfitting.
-![Visualisasi Performance Evaluasi Overfitting Validation Loss](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Loss.png)
-![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Accuracy.png)
-
-### Performance: Visualisasi Akurasi dan Loss per Epoch
-1. **Tujuan**:
-   - Visualisasi ini digunakan untuk menampilkan tren **training loss** dan **validation loss**, serta **training accuracy** dan **validation accuracy** selama proses pelatihan model. Hal ini membantu untuk menganalisis performa model per epoch.
-
-2. **Penjelasan Kode**:
-   - Dua subplot dibuat:
-     - **Loss**: Menggambarkan perubahan nilai loss antara training dan validation data.
-     - **Accuracy**: Menampilkan perubahan akurasi antara training dan validation data.
-   - **`history.history`** berisi data akurasi dan loss per epoch yang diambil selama proses pelatihan.
-
-3. **Output**:
-   - Grafik pertama menunjukkan tren **Loss** per epoch.
-   - Grafik kedua menunjukkan tren **Accuracy** per epoch.
-   - Dengan visualisasi ini, kita dapat melihat apakah model mengalami overfitting atau underfitting serta evaluasi performa model selama pelatihan.
-
-![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20per%20Epoch.png)
-
-# Prediction
-### Prediction: Predict and Visualize a Single Image
-melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilatih. Selain itu, hasil prediksi juga divisualisasikan bersama dengan label kelasnya.
-![Visualisasi Prediction](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Prediction.png)
-
 
 ### Teknologi yang Digunakan
 
-### <summary><strong>Tools:</strong></summary>
+#### **Tools:**
 <p>
     <img src="https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Framework-Flask-green?logo=flask&logoColor=white" />
@@ -166,9 +59,105 @@ melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilati
 
 ---
 
+### Preprocessing dan Augmentasi Gambar dengan Roboflow
 
-Dengan adanya sistem ini, diharapkan proses diagnosis penyakit tanaman jagung dapat dilakukan lebih cepat dan efisien.
+Untuk memastikan gambar berada dalam format yang sesuai dan meningkatkan akurasi model, kami menggunakan **Roboflow** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah teknik yang diterapkan:
 
-## License
+#### **Preprocessing**:
 
-This project is licensed under the [MIT License](LICENSE).
+1. **Auto-Orient**: Menyesuaikan orientasi gambar agar tidak terbalik.
+2. **Static Crop**: Pemotongan gambar untuk memperkecil fokus:
+   - **Horizontal Region**: Pemotongan 25%-75% bagian horizontal.
+   - **Vertical Region**: Pemotongan 27%-75% bagian vertikal.
+3. **Resize**: Mengubah ukuran gambar menjadi **640x640** piksel.
+
+#### **Augmentasi**:
+
+1. **Outputs per Training Example**: Roboflow menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
+2. **Flip Horizontal**: Gambar dibalik secara horizontal.
+3. **Grayscale**: 15% gambar diterapkan filter grayscale.
+4. **Hue**: Perubahan hue antara **-25° hingga +25°**.
+5. **Saturation**: Saturasi disesuaikan antara **-25% hingga +25%**.
+6. **Brightness**: Kecerahan gambar diubah dalam rentang **-25% hingga +25%**.
+7. **Exposure**: Exposure disesuaikan antara **-12% hingga +12%**.
+8. **Crop**: Gambar dipotong secara acak.
+9. **90 Derajat Rotation**: Gambar diputar 90 derajat.
+
+Dengan semua augmentasi ini, dataset menjadi lebih kaya dan model lebih tahan terhadap overfitting.
+
+---
+
+### Visualisasi Data Gambar
+
+Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk memberikan gambaran mengenai kelas-kelas yang ada:
+
+![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)
+
+---
+
+### Penerapan Canny Edge Detection
+
+Teknik **Canny Edge Detection** digunakan untuk memvisualisasikan fitur penting pada gambar daun jagung yang dapat membantu model fokus pada elemen yang relevan:
+
+![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
+
+---
+
+### Hasil
+
+- **Preprocessing**: Tahapan ini mempersiapkan gambar untuk algoritma CNN dan SVM dengan augmentasi data seperti rescale, rotate, zoom, dan flip.
+- **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri setiap jenis penyakit.
+- **Pengujian**: Model yang telah dilatih diuji dengan dataset uji untuk mengukur akurasi dan performa deteksi.
+- **Evaluasi**: Menilai hasil menggunakan metrik seperti confusion matrix, precision, recall, dan F1-score.
+
+---
+
+### Evaluasi Model
+
+#### **Evaluasi Model pada Data Validasi**:
+
+Model dievaluasi dengan data validasi untuk mengukur *loss* dan *accuracy*. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
+
+![Visualisasi Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
+
+#### **Evaluasi dengan Confusion Matrix**:
+
+Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, memberikan wawasan lebih mendalam tentang kesalahan klasifikasi.
+
+![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix.png)
+
+---
+
+### Performance: Evaluasi Overfitting
+
+1. **Plot Loss**: Menampilkan perbandingan antara **Training Loss** dan **Validation Loss**.
+2. **Plot Akurasi**: Menampilkan perbandingan antara **Training Accuracy** dan **Validation Accuracy**.
+3. **Interpretasi**: Mengamati apakah ada perbedaan signifikan antara akurasi pelatihan dan validasi yang menunjukkan **overfitting** atau **underfitting**.
+
+![Visualisasi Performance Evaluasi Overfitting Validation Loss](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Loss.png)
+
+![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Accuracy.png)
+
+---
+
+### Prediction: Prediksi Gambar Tunggal
+
+Melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilatih dan visualisasikan hasil prediksi dengan label kelasnya:
+
+![Visualisasi Prediction](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Prediksi.png)
+
+---
+
+### Kesimpulan
+
+Model CNN dan **DenseNet121** telah menunjukkan potensi yang sangat baik dalam mendeteksi penyakit daun jagung dengan tingkat akurasi yang memadai. Penelitian ini membuka jalan untuk pengembangan sistem deteksi otomatis berbasis AI dalam pertanian untuk mempermudah dan mempercepat diagnosis penyakit tanaman jagung.
+
+---
+
+### Kontak
+
+Jika ada pertanyaan lebih lanjut, silakan hubungi saya melalui email di **[email@example.com]**.
+
+---
+
+Terima kasih telah membaca!
