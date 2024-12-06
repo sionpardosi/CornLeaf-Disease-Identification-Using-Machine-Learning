@@ -27,6 +27,37 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 - **Model Machine Learning**: Algoritma **CNN** dan **Transfer Learning DenseNet121** diterapkan untuk klasifikasi gambar.
 - **Evaluasi Model**: Pengukuran akurasi menggunakan **precision**, **recall**, **F1-score**, dan **confusion matrix** untuk hasil yang optimal.
 
+### Preprocessing dan Augmentasi Gambar dengan Roboflow
+
+Dalam proyek ini, kami menggunakan **Roboflow** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah langkah-langkah yang diterapkan untuk mempersiapkan gambar sebelum digunakan dalam pelatihan model.
+
+#### Preprocessing
+
+Preprocessing adalah tahap penting yang dilakukan untuk memastikan gambar berada dalam format dan ukuran yang sesuai dengan kebutuhan model. Berikut adalah beberapa teknik preprocessing yang diterapkan:
+
+1. **Auto-Orient:** Menyesuaikan orientasi gambar untuk memastikan gambar dalam posisi yang benar dan tidak terbalik.
+2. **Static Crop:** Gambar dipotong pada area tertentu untuk memperkecil fokus:
+   - **Horizontal Region:** Pemotongan dilakukan pada **25%-75%** bagian horizontal gambar.
+   - **Vertical Region:** Pemotongan dilakukan pada **27%-75%** bagian vertikal gambar.
+3. **Resize:** Gambar akan diubah ukurannya menjadi **640x640** piksel untuk memastikan ukuran input yang konsisten pada model.
+
+#### Augmentasi
+
+Untuk memperkaya dataset dan meningkatkan akurasi model, augmentasi gambar digunakan. Dengan Roboflow, kami dapat melakukan berbagai augmentasi secara otomatis, seperti:
+
+1. **Outputs per Training Example:** Untuk setiap gambar dalam dataset, Roboflow menghasilkan **3 output gambar** yang berbeda untuk meningkatkan variasi dalam data pelatihan.
+2. **Flip Horizontal:** Melakukan flip gambar secara horizontal (spion kiri-kanan) untuk menciptakan variasi dalam orientasi objek.
+3. **Grayscale:** 15% dari gambar diterapkan dengan filter grayscale untuk menambah variasi dalam warna gambar.
+4. **Hue:** Perubahan hue gambar dilakukan dalam rentang **-25° hingga +25°** untuk variasi warna.
+5. **Saturation:** Saturasi gambar disesuaikan antara **-25% hingga +25%** untuk variasi kecerahan warna.
+6. **Brightness:** Kecerahan gambar diubah dalam rentang **-25% hingga +25%**.
+7. **Exposure:** Exposure gambar disesuaikan antara **-12% hingga +12%** untuk perubahan kontras.
+8. **Crop:** Gambar akan dipotong secara acak untuk meningkatkan variasi objek yang terlihat dalam gambar.
+9. **90 Derajat Rotation:** Gambar akan diputar 90 derajat untuk meningkatkan variasi sudut pandang gambar.
+
+Dengan menggunakan Roboflow, semua augmentasi ini diterapkan secara otomatis dan sangat membantu dalam memperkaya dataset dan mencegah overfitting selama pelatihan model.
+
+
 ### Teknologi yang Digunakan
 
 ### <summary><strong>Tools:</strong></summary>
