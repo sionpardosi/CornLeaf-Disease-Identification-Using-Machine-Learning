@@ -22,9 +22,13 @@ Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrogram
 
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 
-- **5368 gambar** dan **10 video** daun jagung.
-- Data tersebut diklasifikasikan ke dalam 4 kelas: **Hawar Daun**, **Bercak Daun**, **Karat**, dan **Sehat**.
-
+- **5,368 gambar** dan **10 video** daun jagung.  
+- Data diklasifikasikan ke dalam 4 kelas:  
+  - **Hawar Daun** (Blight)  
+  - **Bercak Daun** (Leaf Spot)  
+  - **Karat** (Rust)  
+  - **Sehat** (Healthy) 
+  
 ---
 
 ### **Bukti Observasi Langsung**
@@ -32,13 +36,17 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ---
 
-## Fitur Utama
+## **Fitur Utama**
 
-- **Deteksi Penyakit Daun Jagung**: Mengidentifikasi penyakit seperti _Bercak Daun_ (Leaf Spot), _Karat Jagung_ (Rust), dan _Hawar Daun_ (Blight).
-- **Pemrosesan Citra - Roboflow / OpenCV**: Augmentasi gambar untuk memperkaya dataset dan menghindari overfitting, termasuk proses **rescale**, **rotate**, **zoom**, untuk selengkapnya dan dapat dilihat di bagian **AUGMENTASI**.
-- **Model Machine Learning**: Algoritma **CNN** dan **Transfer Learning DenseNet121** diterapkan untuk klasifikasi gambar.
-- **Evaluasi Model**: Pengukuran akurasi menggunakan **precision**, **recall**, **F1-score**, dan **confusion matrix** untuk hasil yang optimal.
-- **Performance**:
+- **Deteksi Penyakit Daun Jagung**: Mengidentifikasi penyakit seperti _Hawar Daun_, _Bercak Daun_, dan _Karat_.  
+- **Pemrosesan Citra dengan OpenCV**: Melakukan augmentasi data untuk memperkaya dataset dan mencegah overfitting.  
+- **Model Machine Learning**:  
+  - **Convolutional Neural Network (CNN)**  
+  - **Transfer Learning DenseNet121**  
+- **Evaluasi Model**:  
+  Menggunakan metrik seperti **precision**, **recall**, **F1-score**, dan **confusion matrix**.  
+- **Visualisasi Data Performance**: Menyediakan insight dari hasil analisis dataset.  
+- **Prediksi**: Melakukan prediksi terhadap gambar Test dengan menggunakan model yang telah dilatih
 
 ---
 
@@ -94,7 +102,6 @@ Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk member
 
 ![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)
 
----
 
 ### Penerapan Canny Edge Detection
 
@@ -106,13 +113,13 @@ Teknik **Canny Edge Detection** digunakan untuk memvisualisasikan fitur penting 
 
 # Evaluasi Model
 
-#### **Evaluasi Model pada Data Validasi**:
+### **Evaluasi Model pada Data Validasi**:
 
 Model dievaluasi dengan data validasi untuk mengukur *loss* dan *accuracy*. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
 
 ![Visualisasi Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
 
-#### **Evaluasi dengan Confusion Matrix**:
+### **Evaluasi dengan Confusion Matrix**:
 
 Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, memberikan wawasan lebih mendalam tentang kesalahan klasifikasi.
 
@@ -134,10 +141,10 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 ---
 
-# Hasil
+# **Hasil**
 
-- **Evaluasi**: Menilai hasil menggunakan metrik seperti confusion matrix, precision, recall, dan F1-score.
-- **Performance**: 
+- **Evaluasi**: Menilai hasil menggunakan metrik seperti **confusion matrix**, **precision**, **recall**, dan **F1-score**.  
+- **Performance**: Model menunjukkan akurasi tinggi dalam mengidentifikasi penyakit daun jagung.  
 
 ---
 
@@ -150,18 +157,19 @@ Melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilati
 
 ---
 
-## Kesimpulan
+# Kesimpulan
 
 Model CNN dan **DenseNet121** telah menunjukkan potensi yang sangat baik dalam mendeteksi penyakit daun jagung dengan tingkat akurasi yang memadai. Penelitian ini membuka jalan untuk pengembangan sistem deteksi otomatis berbasis AI dalam pertanian untuk mempermudah dan mempercepat diagnosis penyakit tanaman jagung.
 
 ---
 
-## Kontak
+# **Kontak**
 
-Jika ada pertanyaan lebih lanjut, silakan hubungi saya melalui email di **[spardosi12@gmail.com]**.
+Jika ada pertanyaan atau diskusi lebih lanjut, silakan hubungi:  
+📧 **[spardosi12@gmail.com](mailto:spardosi12@gmail.com)**  
 
 ---
 
-## License
+# License
 
 This project is licensed under the [MIT License](LICENSE).
