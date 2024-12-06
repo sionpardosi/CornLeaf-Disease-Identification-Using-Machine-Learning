@@ -67,9 +67,9 @@ Teknik deteksi tepi menggunakan Canny digunakan untuk memvisualisasikan detail d
 ![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
 
 # Evaluasi Model
-### Evaluasi Model pada Data Validasi
+### Evaluasi Model pada Data Validasi (Visualisasi Validation Accuracy)
 Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*. Hasil evaluasi ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya.
-
+![Visualisasi Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
 
 
 ### Teknologi yang Digunakan
