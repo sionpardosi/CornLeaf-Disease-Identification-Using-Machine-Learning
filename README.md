@@ -124,7 +124,7 @@ Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*.
    - Grafik kedua menunjukkan tren **Accuracy** per epoch.
    - Dengan visualisasi ini, kita dapat melihat apakah model mengalami overfitting atau underfitting serta evaluasi performa model selama pelatihan.
 
-![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Loss.png)
+![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20per%20Epoch.png)
 
 
 
