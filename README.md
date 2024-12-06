@@ -94,8 +94,20 @@ Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*.
 ![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report.png)
 
 
+# Performance
+### Performance: Evaluasi Overfitting
+1. **Plot Loss**:
+   - Grafik pertama menunjukkan perbandingan antara **Training Loss** dan **Validation Loss** selama proses pelatihan.
+   - Jika model mengalami **overfitting**, kita akan melihat **loss validation** yang lebih tinggi dibandingkan **training loss** di akhir pelatihan.
 
+2. **Plot Akurasi**:
+   - Grafik kedua menunjukkan perbandingan antara **Training Accuracy** dan **Validation Accuracy**.
+   - Jika model **overfitting**, akurasi pelatihan akan terus meningkat, sementara akurasi validasi bisa stagnan atau menurun.
 
+3. **Interpretasi**:
+   - Berdasarkan hasil, jika kedua grafik menunjukkan perilaku yang konsisten antara pelatihan dan validasi tanpa adanya perbedaan signifikan, ini menunjukkan bahwa model tidak mengalami overfitting.
+![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix.png)
+![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix.png)
 
 
 ### Teknologi yang Digunakan
