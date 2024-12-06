@@ -6,7 +6,7 @@ Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung 
 
 ---
 
-### Deskripsi Proyek
+## Deskripsi Proyek
 
 Penelitian ini bertujuan untuk:
 
@@ -18,7 +18,7 @@ Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrogram
 
 ---
 
-### Pengumpulan Data
+## Pengumpulan Data
 
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 
@@ -32,7 +32,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ---
 
-### Fitur Utama
+## Fitur Utama
 
 - **Deteksi Penyakit Daun Jagung**: Mengidentifikasi penyakit seperti _Bercak Daun_ (Leaf Spot), _Karat Jagung_ (Rust), dan _Hawar Daun_ (Blight).
 - **Pemrosesan Citra - Roboflow / OpenCV**: Augmentasi gambar untuk memperkaya dataset dan menghindari overfitting, termasuk proses **rescale**, **rotate**, **zoom**, untuk selengkapnya dan dapat dilihat di bagian **AUGMENTASI**.
