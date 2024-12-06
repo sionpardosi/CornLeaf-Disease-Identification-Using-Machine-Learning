@@ -66,6 +66,12 @@ Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk mendap
 Teknik deteksi tepi menggunakan Canny digunakan untuk memvisualisasikan detail dan fitur-fitur penting pada gambar daun jagung. Ini dapat membantu model untuk memfokuskan pada fitur yang relevan selama pelatihan.
 ![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
 
+# Evaluasi Model
+### Evaluasi Model pada Data Validasi
+Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*. Hasil evaluasi ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya.
+
+
+
 ### Teknologi yang Digunakan
 
 ### <summary><strong>Tools:</strong></summary>
