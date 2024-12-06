@@ -126,6 +126,10 @@ Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*.
 
 ![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20per%20Epoch.png)
 
+# ### Prediction
+### Prediction: Predict and Visualize a Single Image
+melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilatih. Selain itu, hasil prediksi juga divisualisasikan bersama dengan label kelasnya.
+![Visualisasi Prediction](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20per%20Epoch.png)
 
 
 ### Teknologi yang Digunakan
