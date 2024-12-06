@@ -90,7 +90,9 @@ Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*.
 4. **Visualisasi**:
    - Menampilkan **Confusion Matrix** menggunakan `seaborn` untuk memvisualisasikan prediksi vs. label sebenarnya.
 
-![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
+![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix.png)
+![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report.png)
+
 
 
 
