@@ -109,6 +109,24 @@ Model dievaluasi menggunakan data validasi untuk mengukur *loss* dan *accuracy*.
 ![Visualisasi Performance Evaluasi Overfitting Validation Loss](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Loss.png)
 ![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Accuracy.png)
 
+### Performance: Visualisasi Akurasi dan Loss per Epoch
+1. **Tujuan**:
+   - Visualisasi ini digunakan untuk menampilkan tren **training loss** dan **validation loss**, serta **training accuracy** dan **validation accuracy** selama proses pelatihan model. Hal ini membantu untuk menganalisis performa model per epoch.
+
+2. **Penjelasan Kode**:
+   - Dua subplot dibuat:
+     - **Loss**: Menggambarkan perubahan nilai loss antara training dan validation data.
+     - **Accuracy**: Menampilkan perubahan akurasi antara training dan validation data.
+   - **`history.history`** berisi data akurasi dan loss per epoch yang diambil selama proses pelatihan.
+
+3. **Output**:
+   - Grafik pertama menunjukkan tren **Loss** per epoch.
+   - Grafik kedua menunjukkan tren **Accuracy** per epoch.
+   - Dengan visualisasi ini, kita dapat melihat apakah model mengalami overfitting atau underfitting serta evaluasi performa model selama pelatihan.
+
+![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Loss.png)
+
+
 
 ### Teknologi yang Digunakan
 
