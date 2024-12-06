@@ -178,13 +178,6 @@ Model CNN dan **DenseNet121** telah menunjukkan potensi yang sangat baik dalam m
 
 ---
 
-# **Kontak**
-
-Jika ada pertanyaan atau diskusi lebih lanjut, silakan hubungi:  
-📧 **[spardosi12@gmail.com](mailto:spardosi12@gmail.com)**  
-
----
-
 # License
 
 This project is licensed under the [MIT License](LICENSE).
