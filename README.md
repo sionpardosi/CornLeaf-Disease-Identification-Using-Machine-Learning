@@ -60,7 +60,7 @@ Dengan menggunakan Roboflow, semua augmentasi ini diterapkan secara otomatis dan
 
 # Visualisasi Data Gambar
 Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk mendapatkan gambaran yang lebih baik mengenai kelas-kelas yang ada dalam dataset.
-
+![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)
 
 ### Teknologi yang Digunakan
 
