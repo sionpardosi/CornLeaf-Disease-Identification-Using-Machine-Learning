@@ -58,6 +58,10 @@ Untuk memperkaya dataset dan meningkatkan akurasi model, augmentasi gambar digun
 Dengan menggunakan Roboflow, semua augmentasi ini diterapkan secara otomatis dan sangat membantu dalam memperkaya dataset dan mencegah overfitting selama pelatihan model.
 
 
+# Visualisasi Data Gambar
+Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk mendapatkan gambaran yang lebih baik mengenai kelas-kelas yang ada dalam dataset.
+
+
 ### Teknologi yang Digunakan
 
 ### <summary><strong>Tools:</strong></summary>
@@ -82,7 +86,7 @@ Dengan menggunakan Roboflow, semua augmentasi ini diterapkan secara otomatis dan
 
 ---
 
-### Hasil (Coming Soon!) - on progress
+### Hasil 
 
 - **Preprocessing**: Tahapan ini mengolah citra untuk mempermudah algoritma CNN dan SVM dalam proses training, dengan menggunakan augmentasi data seperti rescale, rotate, zoom, dan flip.
 - **Pelatihan**: Data latih digunakan untuk mengajari model mengenali ciri-ciri dari setiap jenis penyakit melalui proses iteratif.
