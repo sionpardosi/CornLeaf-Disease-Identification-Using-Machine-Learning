@@ -119,6 +119,12 @@ class_labels = {0: 'Bercak', 1: 'Hawar', 2: 'Karat', 3: 'Sehat'}
 
 ---
 
+# Architecture Model CNN Identifikasi Jenis Penyakit Tanaman pada Daun Jagung
+
+![Aksitektur Model](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model.png)
+
+---
+
 # Evaluasi Model
 
 ### **Evaluasi Model pada Data Validasi (Visualisasi Validation Accuracy)**:
