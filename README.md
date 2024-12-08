@@ -214,8 +214,11 @@ Unduh dataset yang diperlukan dengan menggunakan Roboflow dari folder : [tautan 
 
 ## 4. Menjalankan Model
 
-Pastikan Anda memiliki Jupyter Notebook, Google Colab, atau menjalankan kode dari Visual Studio Code dengan environment yang mendukung file `.ipynb` (Jupyter Notebook). Anda dapat membuka dan menjalankan file `train.ipynb` untuk melatih model, atau menjalankan file Python seperti `train.py` melalui terminal atau command prompt untuk melatih model dari baris perintah.
+Pastikan Anda memiliki salah satu dari berikut untuk menjalankan model:
 
+- **Jupyter Notebook**: Jalankan file `.ipynb` langsung di Jupyter Notebook.
+- **Google Colab**: Jika Anda lebih suka menggunakan Google Colab, Anda dapat mengunggah file `.ipynb` ke Google Colab dan menjalankannya di sana.
+- **Visual Studio Code (VS Code)**: Pastikan Anda telah menginstal Visual Studio Code dan menambahkan Jupyter Extension. Untuk menjalankan notebook `.ipynb` di VS Code, pastikan Anda memiliki virtual environment dengan `ipykernel` yang terinstal.
 
 
 
