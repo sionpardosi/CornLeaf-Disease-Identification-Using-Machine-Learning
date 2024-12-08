@@ -220,16 +220,18 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 - **Google Colab**: Jika Anda lebih suka menggunakan Google Colab, Anda dapat mengunggah file `.ipynb` ke Google Colab dan menjalankannya di sana.
 - **Visual Studio Code (VS Code)**: Pastikan Anda telah menginstal Visual Studio Code dan menambahkan Jupyter Extension. Untuk menjalankan notebook `.ipynb` di VS Code, pastikan Anda memiliki virtual environment dengan `ipykernel` yang terinstal.
 
-### Langkah-langkah menjalankan model dan pelatihan:
+### Menjalankan model dan pelatihan melalui Kode .ipynb :
 
-1. **Buka Kode app.ipynb dan Import Libraries and Modules**:
-   Pastikan untuk mengimpor semua libraries dan modul yang diperlukan di dalam kode.
+0. **Buka Kode app.ipynb** 
+
+1. **Import Libraries and Modules**:
+   Pastikan untuk menjalankan import semua libraries dan modul yang diperlukan di dalam kode.
 
 2. **Jalankan Arsitektur Model CNN**:
    Lakukan inisialisasi dan definisi arsitektur model CNN seperti yang ada dalam kode.
 
-3. **Load Model yang Sudah Disimpan**:
-   Karena epoch model sudah disimpan, gunakan kode berikut untuk memuat model yang telah disimpan di folder :
+3. **Jalankan Load Model yang Sudah Disimpan**:
+   Karena epoch model sudah disimpan, gunakan kode berikut untuk memuat model yang telah disimpan di folder sehingga tidak perlu melakukan pelatihan (Epoch) ulang :
    `model/model2.keras` dan `model2.h5`
 
 4. **Lakukan Percobaan Accuracy**:
@@ -238,7 +240,7 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 5. **Uji Evaluasi dan Performance**:
    Jalankan kode uji untuk melihat hasil evaluasi dan performa model menggunakan dataset pengujian.
 
-6. **JPrediksi Gambar**:
+6. **Prediksi Gambar**:
    Untuk melihat hasil prediksi pada gambar tertentu, sesuaikan path gambar yang ingin Anda prediksi:
   `img_path = 'Testing/test.jpg'  # Ganti dengan path gambar`
 
