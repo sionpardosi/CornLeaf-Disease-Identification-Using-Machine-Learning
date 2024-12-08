@@ -113,6 +113,10 @@ Teknik **Canny Edge Detection** digunakan untuk memvisualisasikan fitur penting 
 
 # Class Distribution
 
+class_labels = {0: 'Bercak', 1: 'Hawar', 2: 'Karat', 3: 'Sehat'}
+
+![Class Distribution Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Class%20Distribution%20Dataset.png)
+
 ---
 
 # Evaluasi Model
