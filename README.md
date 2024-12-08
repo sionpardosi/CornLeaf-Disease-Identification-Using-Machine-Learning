@@ -224,7 +224,7 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 Jalankan semua kode yang ada di dalam file `app.ipynb`.
 
 #### Jika ingin menjalankan server aplikasi Flask untuk testing dan prediksi, gunakan perintah:
-  python app.py
+`python app.py`
 
 ## 5. Akses Aplikasi Web
 Setelah aplikasi Flask berjalan, buka browser dan akses:
