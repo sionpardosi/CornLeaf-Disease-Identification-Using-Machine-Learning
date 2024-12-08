@@ -192,6 +192,17 @@ Model CNN dan **DenseNet121** telah menunjukkan potensi yang sangat baik dalam m
 
 ---
 
+# Langkah-Langkah Menjalankan Proyek
+
+## 1. Download atau Clone Repository
+
+- Buka terminal atau command prompt.
+- Clone repository dengan perintah:
+  ```bash
+  git clone https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning.git
+
+Atau, unduh proyek dalam format ZIP melalui tombol "Code" di halaman GitHub dan ekstrak file ke direktori yang diinginkan.
+
 # License
 
 This project is licensed under the [MIT License](LICENSE).
