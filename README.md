@@ -251,9 +251,6 @@ http://127.0.0.1:5000/
 
 Aplikasi ini akan memungkinkan Anda untuk mengupload gambar daun jagung dan melihat hasil prediksi jenis penyakit.
 
-
-
-
 # License
 
 This project is licensed under the [MIT License](LICENSE).
