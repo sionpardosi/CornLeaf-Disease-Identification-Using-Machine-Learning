@@ -222,16 +222,15 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 
 #### Langkah-langkah menjalankan model dan pelatihan:
 
-1. **Import Libraries and Modules**:
+1. **Buka Kode app.ipynb dan Import Libraries and Modules**:
    Pastikan untuk mengimpor semua libraries dan modul yang diperlukan di dalam kode.
 
 2. **Jalankan Arsitektur Model CNN**:
    Lakukan inisialisasi dan definisi arsitektur model CNN seperti yang ada dalam kode.
 
 3. **Load Model yang Sudah Disimpan**:
-   Karena epoch model sudah disimpan, gunakan kode berikut untuk memuat model yang telah disimpan di folder `model/`:
-   ```python
-   model = load_model('model/model2.keras')  # atau 'model2.h5'
+   Karena epoch model sudah disimpan, gunakan kode berikut untuk memuat model yang telah disimpan di folder :
+   `model/model2.keras` dan `model2.h5`
 
 
 
@@ -254,7 +253,7 @@ Jalankan semua kode yang ada di dalam file `app.ipynb`.
 
 - Import Libraries and Modules yang ada di kode
 - Jalankan Kode arsitektur Model CNN
-- Karena Epoch sudah disimpan modelnya, jalankan Load model yang sudah disimpan, di folder `model/model2.keras` dan model2.h5
+- Karena Epoch sudah disimpan modelnya, jalankan Load model yang sudah disimpan, di folder `model/model2.keras` dan `model2.h5`
 - Lakukan percobaan Accuracy untuk melihat hasilnya
 - lakukan run untuk melihat hasil Uji Evaluasi dan performance
 - Jalankan kode prediction untuk melihat hasil gambar yang ingin di prediksi, sesuaikan path gambar yang ingin di prediksi
