@@ -214,16 +214,23 @@ Unduh dataset yang diperlukan dengan menggunakan Roboflow dari folder : [tautan 
 
 ## 4. Menjalankan Model
 
-Pastikan Anda memiliki salah satu dari berikut untuk menjalankan model:
+Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 
 - **Jupyter Notebook**: Jalankan file `.ipynb` langsung di Jupyter Notebook.
 - **Google Colab**: Jika Anda lebih suka menggunakan Google Colab, Anda dapat mengunggah file `.ipynb` ke Google Colab dan menjalankannya di sana.
 - **Visual Studio Code (VS Code)**: Pastikan Anda telah menginstal Visual Studio Code dan menambahkan Jupyter Extension. Untuk menjalankan notebook `.ipynb` di VS Code, pastikan Anda memiliki virtual environment dengan `ipykernel` yang terinstal.
 
+#### Untuk menjalankan model dan melakukan pelatihan, gunakan perintah:
+Jalankan semua kode yang ada di dalam file `app.ipynb`.
 
+#### Jika ingin menjalankan server aplikasi Flask untuk testing dan prediksi, gunakan perintah:
+  python app.py
 
+## 5. Akses Aplikasi Web
+Setelah aplikasi Flask berjalan, buka browser dan akses:
+http://127.0.0.1:5000/
 
-
+Aplikasi ini akan memungkinkan Anda untuk mengupload gambar daun jagung dan melihat hasil prediksi jenis penyakit.
 
 
 
