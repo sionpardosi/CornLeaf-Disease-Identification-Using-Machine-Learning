@@ -210,7 +210,7 @@ Atau, unduh proyek dalam format ZIP melalui tombol "Code" di halaman GitHub dan 
 
 ## 3. Persiapkan Dataset
 
-Unduh dataset yang diperlukan dengan menggunakan Roboflow dari folder : [tautan GitHub](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Dataset/Dataset.txt).
+Unduh dataset yang diperlukan dengan menggunakan Roboflow dari folder Dataset/ : [tautan GitHub](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Dataset/Dataset.txt).
 
 ## 4. Menjalankan Model
 
