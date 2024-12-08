@@ -212,18 +212,9 @@ Atau, unduh proyek dalam format ZIP melalui tombol "Code" di halaman GitHub dan 
 
 Unduh dataset yang diperlukan dengan menggunakan Roboflow dari folder : [tautan GitHub](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Dataset/Dataset.txt).
 
-atau
+## 4. Menjalankan Model
 
-Anda bisa mengikuti langkah-langkah berikut untuk mengunduh dataset menggunakan Roboflow:
-
-1. Install `roboflow` jika belum terpasang:
-   ```bash
-   !Install `roboflow` jika belum terpasang dengan menjalankan perintah berikut: `!pip install roboflow`. Setelah itu, unduh dataset yang diperlukan dengan kode berikut: `from roboflow import Roboflow; rf = Roboflow(api_key="sFsgBqWcv09QR1Yku5mC"); project = rf.workspace("sion-pardosi-hbf7k").project("identification-cornleaf-diseases"); version = project.version(1); dataset = version.download("folder")`. Pastikan API key yang digunakan benar dan sesuai, serta periksa struktur folder dataset sesuai dengan dokumentasi proyek.
-
-                
-
-
-
+Pastikan Anda memiliki Jupyter Notebook, Google Colab, atau menjalankan kode dari Visual Studio Code dengan environment yang mendukung file `.ipynb` (Jupyter Notebook). Anda dapat membuka dan menjalankan file `train.ipynb` untuk melatih model, atau menjalankan file Python seperti `train.py` melalui terminal atau command prompt untuk melatih model dari baris perintah.
 
 
 
