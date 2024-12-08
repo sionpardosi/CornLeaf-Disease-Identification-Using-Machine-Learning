@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 app = Flask(__name__)
 
 # Path model
-MODEL_PATH = r"D:\MATA KULIAH - DEL\SEMESTER 5\Pembelajaran Mesin\Project Machine Learning\Project Machine Learning\CornLeaf-Disease-Identification-Using-Machine-Learning\Model\model1.keras"
+MODEL_PATH = r"D:\MATA KULIAH - DEL\SEMESTER 5\Pembelajaran Mesin\Project Machine Learning\Project Machine Learning\CornLeaf-Disease-Identification-Using-Machine-Learning\Model\model2.keras"
 
 # Load model
 model = load_model(MODEL_PATH)
@@ -28,7 +28,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # Fungsi untuk memproses gambar
 def preprocess_image(image_path):
     """Memproses gambar menjadi format yang sesuai dengan input model."""
-    img = load_img(image_path, target_size=(224, 224))  # Ukuran sesuai model
+    img = load_img(image_path, target_size=(256, 256))  # Ukuran sesuai model
     x = img_to_array(img)
     x = x.astype('float32') / 255.0  # Normalisasi
     x = np.expand_dims(x, axis=0)
