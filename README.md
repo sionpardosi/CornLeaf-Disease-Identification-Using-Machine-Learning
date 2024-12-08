@@ -111,6 +111,10 @@ Teknik **Canny Edge Detection** digunakan untuk memvisualisasikan fitur penting 
 
 ---
 
+# Class Distribution
+
+---
+
 # Evaluasi Model
 
 ### **Evaluasi Model pada Data Validasi (Visualisasi Validation Accuracy)**:
