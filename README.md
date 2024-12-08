@@ -203,6 +203,26 @@ Model CNN dan **DenseNet121** telah menunjukkan potensi yang sangat baik dalam m
 
 Atau, unduh proyek dalam format ZIP melalui tombol "Code" di halaman GitHub dan ekstrak file ke direktori yang diinginkan.
 
+## 2. Instalasi Dependensi
+- Masuk ke direktori proyek:
+  ```bash
+  cd CornLeaf-Disease-Identification-Using-Machine-Learning
+
+## 3. Persiapkan Dataset
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # License
 
 This project is licensed under the [MIT License](LICENSE).
