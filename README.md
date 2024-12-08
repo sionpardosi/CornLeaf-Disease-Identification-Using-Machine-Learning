@@ -220,7 +220,7 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 - **Google Colab**: Jika Anda lebih suka menggunakan Google Colab, Anda dapat mengunggah file `.ipynb` ke Google Colab dan menjalankannya di sana.
 - **Visual Studio Code (VS Code)**: Pastikan Anda telah menginstal Visual Studio Code dan menambahkan Jupyter Extension. Untuk menjalankan notebook `.ipynb` di VS Code, pastikan Anda memiliki virtual environment dengan `ipykernel` yang terinstal.
 
-#### Langkah-langkah menjalankan model dan pelatihan:
+### Langkah-langkah menjalankan model dan pelatihan:
 
 1. **Buka Kode app.ipynb dan Import Libraries and Modules**:
    Pastikan untuk mengimpor semua libraries dan modul yang diperlukan di dalam kode.
@@ -232,35 +232,17 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
    Karena epoch model sudah disimpan, gunakan kode berikut untuk memuat model yang telah disimpan di folder :
    `model/model2.keras` dan `model2.h5`
 
+4. **Lakukan Percobaan Accuracy**:
+   Setelah model dimuat, jalankan perintah kode yang sudah ada untuk menguji akurasi model dengan dataset yang ada.
 
+5. **Uji Evaluasi dan Performance**:
+   Jalankan kode uji untuk melihat hasil evaluasi dan performa model menggunakan dataset pengujian.
 
+6. **JPrediksi Gambar**:
+   Untuk melihat hasil prediksi pada gambar tertentu, sesuaikan path gambar yang ingin Anda prediksi:
+  `img_path = 'Testing/test.jpg'  # Ganti dengan path gambar`
 
-
-
-
-
-## 4. Menjalankan Model
-
-Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
-
-- **Jupyter Notebook**: Jalankan file `.ipynb` langsung di Jupyter Notebook.
-- **Google Colab**: Jika Anda lebih suka menggunakan Google Colab, Anda dapat mengunggah file `.ipynb` ke Google Colab dan menjalankannya di sana.
-- **Visual Studio Code (VS Code)**: Pastikan Anda telah menginstal Visual Studio Code dan menambahkan Jupyter Extension. Untuk menjalankan notebook `.ipynb` di VS Code, pastikan Anda memiliki virtual environment dengan `ipykernel` yang terinstal.
-
-#### Untuk menjalankan model dan melakukan pelatihan, gunakan perintah:
-Jalankan semua kode yang ada di dalam file `app.ipynb`.
-
-
-- Import Libraries and Modules yang ada di kode
-- Jalankan Kode arsitektur Model CNN
-- Karena Epoch sudah disimpan modelnya, jalankan Load model yang sudah disimpan, di folder `model/model2.keras` dan `model2.h5`
-- Lakukan percobaan Accuracy untuk melihat hasilnya
-- lakukan run untuk melihat hasil Uji Evaluasi dan performance
-- Jalankan kode prediction untuk melihat hasil gambar yang ingin di prediksi, sesuaikan path gambar yang ingin di prediksi
-`img_path = 'Testing/test.jpg'  # Ganti dengan path gambar`
-
-
-#### Jika ingin menjalankan server aplikasi Flask untuk testing dan prediksi, gunakan perintah:
+### Jika ingin menjalankan server aplikasi Flask untuk testing dan prediksi, gunakan perintah:
 `python app.py`
 
 ## 5. Akses Aplikasi Web
