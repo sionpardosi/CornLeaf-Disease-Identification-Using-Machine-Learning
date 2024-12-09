@@ -24,10 +24,10 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 - **5,368 gambar** dan **10 video** daun jagung.  
 - Data diklasifikasikan ke dalam 4 kelas:  
-  - **Hawar Daun** (Blight)  
-  - **Bercak Daun** (Leaf Spot)  
-  - **Karat** (Rust)  
-  - **Sehat** (Healthy) 
+  - **Hawar Daun** (Blight).  
+  - **Bercak Daun** (Leaf Spot).  
+  - **Karat** (Rust).  
+  - **Sehat** (Healthy). 
   
 ---
 
