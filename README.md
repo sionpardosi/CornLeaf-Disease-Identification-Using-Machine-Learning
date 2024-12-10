@@ -195,11 +195,11 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 # **Hasil dan Pembahasan**
 
-Penggunaan algoritma CNN-Kostum pada klasifikasi penyakit daun jagung menunjukkan performa baik dengan akurasi 97% dan loss 0,16, membuktikan kemampuannya mempelajari pola tanpa overfitting. Model DenseNet121 sebagai pembanding mencapai akurasi lebih tinggi, 97,7%, meskipun waktu pelatihannya lebih lama, menunjukkan keunggulannya dalam menangani jaringan kompleks.
+Algoritma CNN-Kostum berhasil mencapai akurasi 98% dengan loss 0,16, menunjukkan kemampuan mempelajari pola secara optimal tanpa overfitting. Sebagai pembanding, DenseNet121 mencapai akurasi 97,7% dengan waktu pelatihan lebih lama, mengindikasikan keunggulan dalam jaringan yang lebih kompleks.
 
-Hyperparameter tuning, seperti learning rate 0,0001, batch size 32, dan 50 epoch, meningkatkan performa model. Dataset diproses melalui normalisasi, resize, dan augmentasi, yang terbukti efektif meningkatkan generalisasi model. Data dibagi 80% untuk latih dan 20% untuk uji, memastikan evaluasi adil.
+Tuning hyperparameter, termasuk learning rate 0,0001, batch size 32, dan 50 epoch, memberikan kontribusi signifikan terhadap peningkatan performa model. Dataset diproses melalui normalisasi, resize, dan augmentasi, yang efektif meningkatkan generalisasi model terhadap variasi data. Pembagian data menjadi 80% latih dan 20% uji memastikan evaluasi yang adil dan bebas bias.
 
-Hasil menunjukkan kombinasi preprocessing, arsitektur CNN-Kostum, dan optimisasi hyperparameter menghasilkan performa optimal. DenseNet121 unggul dalam akurasi, namun CNN-Kostum lebih efisien, menjadikannya pilihan praktis untuk implementasi teknologi pertanian.
+Hasil menunjukkan bahwa kombinasi preprocessing, arsitektur CNN-Kostum, dan optimisasi hyperparameter mampu memberikan performa optimal. Meski DenseNet121 menawarkan akurasi lebih tinggi, CNN-Kostum unggul dalam efisiensi waktu pelatihan, menjadikannya solusi praktis untuk implementasi dalam teknologi pertanian.
 
 ---
 
