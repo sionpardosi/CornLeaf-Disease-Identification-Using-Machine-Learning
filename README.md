@@ -215,6 +215,13 @@ Unduh dataset yang diperlukan dengan menggunakan Roboflow dari folder Dataset/ :
 
 ## 4. Menjalankan Model
 
+⚠️ **Ingat!!!**  
+Model yang dilatih sudah disimpan, sehingga **tidak perlu melakukan pelatihan data lagi**. Anda dapat mencoba memakai model berikut:  
+- **Model_CNN_256px.keras**  
+- **Model_CNN_128px.keras**  
+- **Model_denseNet121_256px.keras**  
+- **Model_denseNet121_128px.keras**
+
 Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 
 - **Jupyter Notebook**: Jalankan file `.ipynb` langsung di Jupyter Notebook.
