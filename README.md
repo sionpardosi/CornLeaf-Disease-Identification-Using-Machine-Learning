@@ -132,11 +132,17 @@ class_labels = {0: 'Bercak', 1: 'Hawar', 2: 'Karat', 3: 'Sehat'}
 
 # Evaluasi Model
 
-### **Evaluasi Model pada Data Validasi (Visualisasi Validation Accuracy)**:
-
 Model dievaluasi dengan data validasi untuk mengukur *loss* dan *accuracy*. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
 
+### **Evaluasi Model CNN-Costum pada Data Validasi (Visualisasi Validation Accuracy)**:
+
 ![Visualisasi Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Validation%20Accuracy.png)
+
+### **Evaluasi Model Transfer Learning DenseNet121 pada Data Validasi (Visualisasi Validation Accuracy)**:
+
+![Visualisasi Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model%20denseNet121.png)
+
+---
 
 ### **Evaluasi dengan Confusion Matrix**:
 
