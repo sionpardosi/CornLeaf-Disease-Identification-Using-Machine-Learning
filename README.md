@@ -43,6 +43,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 - **Model Machine Learning**:  
   - **Convolutional Neural Network (CNN)**  
   - **Transfer Learning DenseNet121**  
+- **HyperParamter Tuning**
 - **Evaluasi Model**:  
   Menggunakan metrik seperti **precision**, **recall**, **F1-score**, dan **confusion matrix**.  
 - **Visualisasi Data Performance**: Menyediakan insight dari hasil analisis dataset.  
