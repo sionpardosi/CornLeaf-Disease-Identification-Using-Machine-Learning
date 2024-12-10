@@ -13,10 +13,3 @@ polar: # Tambahkan username Polar jika ada
 buy_me_a_coffee: # Tambahkan username Buy Me a Coffee jika ada
 thanks_dev: # Tambahkan username Thanks.dev jika ada
 custom: # Tambahkan hingga 4 URL sponsorship kustom jika ada
-
-<iframe src="https://github.com/sponsors/sionpardosi/card" 
-        title="Sponsor sionpardosi" 
-        height="225" 
-        width="600" 
-        style="border: 0;">
-</iframe>
