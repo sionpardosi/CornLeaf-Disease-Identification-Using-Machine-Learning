@@ -150,9 +150,11 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 -> Menghitung **Confusion Matrix** untuk menilai distribusi prediksi, Menampilkan **Classification Report** yang mencakup Precision, Recall, dan F1-Score, Menampilkan hasil precision, recall, dan f1-score.
 
 #### **Rumus Masing Masing Parameter**:
+
 ![Rumus](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Rumus%20Confusion%20Matrix.png)
 
 #### **Rumus Tabel Confusion Matrix**:
+
 ![Rumus](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Rumus%20Tabel%20Confusion%20Matrix.png)
 
 ### **Visualisasi Confusion Matrix Model CNN-Costum**:
@@ -165,8 +167,12 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 ---
 
-#### **Classification Report**:
+### **Classification Report Model CNN-Costum**:
 ![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report.png)
+
+### **Classification Report Model Tranfer Learning DenseNet121**:
+
+![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report%20denseNet121.png)
 
 ---
 
