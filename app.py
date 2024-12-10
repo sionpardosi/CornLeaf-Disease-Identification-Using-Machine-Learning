@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 app = Flask(__name__)
 
 # Path model
-MODEL_PATH = r"D:\MATA KULIAH - DEL\SEMESTER 5\Pembelajaran Mesin\Project Machine Learning\Project Machine Learning\CornLeaf-Disease-Identification-Using-Machine-Learning\Model\model2.keras"
+MODEL_PATH = r"D:\MATA KULIAH - DEL\SEMESTER 5\Pembelajaran Mesin\Project Machine Learning\Project Machine Learning\CornLeaf-Disease-Identification-Using-Machine-Learning\Model\Model_CNN_256px.keras"
 
 # Load model
 model = load_model(MODEL_PATH)
