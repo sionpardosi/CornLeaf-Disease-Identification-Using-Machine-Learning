@@ -120,9 +120,13 @@ class_labels = {0: 'Bercak', 1: 'Hawar', 2: 'Karat', 3: 'Sehat'}
 
 ---
 
-# Architecture Model CNN Identifikasi Jenis Penyakit Tanaman pada Daun Jagung
+# Architecture Model CNN-Costum Identifikasi Jenis Penyakit Tanaman pada Daun Jagung
 
 ![Aksitektur Model](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model.png)
+
+# Architecture Model Transfer Learning DenseNet121 Identifikasi Jenis Penyakit Tanaman pada Daun Jagung
+
+![Aksitektur Model](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model%20denseNet121.png)
 
 ---
 
