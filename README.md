@@ -178,17 +178,18 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 # Perfomance
 
-### Performance: Evaluasi Overfitting
-
 1. **Plot Loss**: Menampilkan perbandingan antara **Training Loss** dan **Validation Loss**.
 2. **Plot Akurasi**: Menampilkan perbandingan antara **Training Accuracy** dan **Validation Accuracy**.
 3. **Interpretasi**: Mengamati apakah ada perbedaan signifikan antara akurasi pelatihan dan validasi yang menunjukkan **overfitting** atau **underfitting**.
+
+### Performance: Evaluasi Overfitting Model CNN-Costum
 
 ![Visualisasi Performance Evaluasi Overfitting Validation Loss](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Loss.png)
 
 ![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Accuracy.png)
 
-![Visualisasi Performance Accuracy dan loss per Epoch](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20per%20Epoch.png)
+### Performance: Evaluasi Overfitting Model Transfer Learning DenseNet121
+![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20training%20dan%20validation%20DenseNet121.jpg)
 
 ---
 
