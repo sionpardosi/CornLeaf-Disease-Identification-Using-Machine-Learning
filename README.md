@@ -161,7 +161,7 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 ### **Visualisasi Confusion Matrix Model Transfer Learning DenseNet121**:
 
-![Visualisasi Confusion Matrix]()
+![Visualisasi Confusion Matrix](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Confusion%20Matrix%20denseNet121.png)
 
 ---
 
