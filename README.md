@@ -193,11 +193,13 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 
 ---
 
+# **Hasil dan Pembahasan**
 
-# **Hasil**
+Penggunaan algoritma CNN-Kostum pada klasifikasi penyakit daun jagung menunjukkan performa baik dengan akurasi 97% dan loss 0,16, membuktikan kemampuannya mempelajari pola tanpa overfitting. Model DenseNet121 sebagai pembanding mencapai akurasi lebih tinggi, 97,7%, meskipun waktu pelatihannya lebih lama, menunjukkan keunggulannya dalam menangani jaringan kompleks.
 
-- **Evaluasi**: Menilai hasil menggunakan metrik seperti **confusion matrix**, **precision**, **recall**, dan **F1-score**.  
-- **Performance**: Model menunjukkan akurasi tinggi dalam mengidentifikasi penyakit daun jagung.  
+Hyperparameter tuning, seperti learning rate 0,0001, batch size 32, dan 50 epoch, meningkatkan performa model. Dataset diproses melalui normalisasi, resize, dan augmentasi, yang terbukti efektif meningkatkan generalisasi model. Data dibagi 80% untuk latih dan 20% untuk uji, memastikan evaluasi adil.
+
+Hasil menunjukkan kombinasi preprocessing, arsitektur CNN-Kostum, dan optimisasi hyperparameter menghasilkan performa optimal. DenseNet121 unggul dalam akurasi, namun CNN-Kostum lebih efisien, menjadikannya pilihan praktis untuk implementasi teknologi pertanian.
 
 ---
 
