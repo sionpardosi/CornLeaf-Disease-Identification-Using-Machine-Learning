@@ -1,30 +1,27 @@
-{% extends "import.html" %}
-
-{% block content %}
-<center>
-    <br>
-    <h2>Identifikasi Penyakit Daun Jagung Menggunakan Deep Learning</h2><br>
-
-    <form id="upload-file" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Penyakit Daun Jagung</title>
+</head>
+<body>
+    <h1>Prediksi Penyakit Daun Jagung</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="file">Unggah Gambar:</label>
+        <input type="file" name="file" id="file" accept="image/*" required>
+        <button type="submit">Prediksi</button>
     </form>
-
-
-    <div class="image-section" style="display:none;">
-        <img id="imagePreview" class="img-responsive" src="#" style="width:300px;height:300px;" /><br><br>
-        <div>
-            <button type="button" class="btn btn-info btn-lg " id="btn-predict">Prediksi</button>
-        </div>
-    </div>
-
-
-
-    <div class="loader" style="display:none;"></div>
-
-    <h3 id="result">
-        <span> </span>
-    </h3>
-
-
-</center><br><br>
-{% endblock %}
+    {% if image_path %}
+    <h2>Hasil Prediksi</h2>
+    <img src="{{ image_path }}" alt="Gambar yang diunggah" style="max-width: 300px;">
+    <p>Kelas yang diprediksi: <strong>{{ predicted_label }}</strong> ({{ probability|round(2) }}%)</p>
+    <h3>Probabilitas untuk setiap kelas:</h3>
+    <ul>
+        {% for label, prob in probabilities_dict.items() %}
+        <li>{{ class_labels[label] }}: {{ prob|round(2) }}%</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>

@@ -1,77 +1,67 @@
-import os
-import time
-import numpy as np
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, redirect, url_for
 from werkzeug.utils import secure_filename
+import os
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.preprocessing import image
+import numpy as np
 
-# Inisialisasi aplikasi Flask
+# Konfigurasi Flask
 app = Flask(__name__)
-
-# Path model
-MODEL_PATH = r"D:\MATA KULIAH - DEL\SEMESTER 5\Pembelajaran Mesin\Project Machine Learning\Project Machine Learning\CornLeaf-Disease-Identification-Using-Machine-Learning\Model\Model_CNN_256px.keras"
+app.config['UPLOAD_FOLDER'] = 'static/uploads'
+app.secret_key = 'your_secret_key'
 
 # Load model
+MODEL_PATH = 'Model/Model_CNN_256px.keras'
 model = load_model(MODEL_PATH)
 
-# Labels untuk prediksi
-labels = ['hawar', 'karat', 'bercak', 'sehat']
+# Label kelas
+class_labels = {0: 'Bercak', 1: 'Hawar', 2: 'Karat', 3: 'Sehat'}
 
-# Folder untuk menyimpan file upload
-UPLOAD_FOLDER = 'uploads'
-if not os.path.exists(UPLOAD_FOLDER):
-    os.makedirs(UPLOAD_FOLDER)
+def predict_image(model, img_path):
+    # Load image dan ubah ukuran agar sesuai dengan input model
+    img = image.load_img(img_path, target_size=(256, 256))
+    img_array = image.img_to_array(img)
+    img_array = np.expand_dims(img_array, axis=0)
+    img_array = img_array / 255.0  # Normalisasi
 
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+    # Prediksi
+    prediction = model.predict(img_array)
+    predicted_index = np.argmax(prediction)
+    return predicted_index, prediction[0]
 
-# Fungsi untuk memproses gambar
-def preprocess_image(image_path):
-    """Memproses gambar menjadi format yang sesuai dengan input model."""
-    img = load_img(image_path, target_size=(256, 256))  # Ukuran sesuai model
-    x = img_to_array(img)
-    x = x.astype('float32') / 255.0  # Normalisasi
-    x = np.expand_dims(x, axis=0)
-    return x
-
-# Fungsi untuk melakukan prediksi
-def get_result(image_path):
-    """Menghasilkan prediksi label dan confidence dari gambar."""
-    start_time = time.time()
-    x = preprocess_image(image_path)
-    predictions = model.predict(x)[0]
-    predicted_label = labels[np.argmax(predictions)]
-    confidence = np.max(predictions) * 100
-    print(f"Prediction time: {time.time() - start_time:.2f} seconds")
-    return predicted_label, confidence
-
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    """Menampilkan halaman utama."""
+    if request.method == 'POST':
+        # Cek apakah ada file yang diunggah
+        if 'file' not in request.files:
+            return "No file part"
+        file = request.files['file']
+        if file.filename == '':
+            return "No selected file"
+        if file:
+            # Simpan file ke folder uploads
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            file.save(filepath)
+
+            # Prediksi gambar
+            predicted_index, probabilities = predict_image(model, filepath)
+            predicted_label = class_labels[predicted_index]
+            probability = probabilities[predicted_index] * 100
+
+            # Konversi probabilitas ke dictionary
+            probabilities_dict = {i: prob * 100 for i, prob in enumerate(probabilities)}
+
+            # Tampilkan hasil
+            return render_template(
+                'index.html',
+                image_path=filepath,
+                predicted_label=predicted_label,
+                probability=probability,
+                probabilities_dict=probabilities_dict,
+                class_labels=class_labels
+            )
     return render_template('index.html')
-
-@app.route('/predict', methods=['POST'])
-def upload():
-    """Endpoint untuk memprediksi gambar."""
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file part'})
-
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({'error': 'No selected file'})
-
-    # Simpan file
-    filename = secure_filename(file.filename)
-    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    file.save(file_path)
-
-    # Lakukan prediksi
-    predicted_label, confidence = get_result(file_path)
-
-    # Hapus file setelah digunakan
-    os.remove(file_path)
-
-    return jsonify({'label': predicted_label, 'confidence': f'{confidence:.2f}%'})
 
 if __name__ == '__main__':
     app.run(debug=True)
