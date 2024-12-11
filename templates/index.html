@@ -4,24 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediksi Penyakit Daun Jagung</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9fafc;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .header {
+            background: url('https://source.unsplash.com/1600x900/?corn-field') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .header h1 {
+            font-size: 3rem;
+            z-index: 1;
+            position: relative;
+        }
+        .header p {
+            font-size: 1.5rem;
+            z-index: 1;
+            position: relative;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #43cea2, #185a9d);
+            border: none;
+            transition: background 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #185a9d, #43cea2);
+        }
+        .progress-bar {
+            transition: width 0.4s ease;
+        }
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #43cea2;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .animated-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
 </head>
 <body>
-    <h1>Prediksi Penyakit Daun Jagung</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <label for="file">Unggah Gambar:</label>
-        <input type="file" name="file" id="file" accept="image/*" required>
-        <button type="submit">Prediksi</button>
-    </form>
-    {% if image_path %}
-    <h2>Hasil Prediksi</h2>
-    <img src="{{ image_path }}" alt="Gambar yang diunggah" style="max-width: 300px;">
-    <p>Kelas yang diprediksi: <strong>{{ predicted_label }}</strong> ({{ probability|round(2) }}%)</p>
-    <h3>Probabilitas untuk setiap kelas:</h3>
-    <ul>
-        {% for label, prob in probabilities_dict.items() %}
-        <li>{{ class_labels[label] }}: {{ prob|round(2) }}%</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Prediksi Penyakit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Prediksi Penyakit Daun Jagung</h1>
+            <p>Unggah gambar daun jagung Anda dan dapatkan hasil prediksi secara instan.</p>
+        </div>
+    </header>
+    
+    <style>
+        /* Gaya untuk header */
+        .header {
+            background: linear-gradient(to right, #4CAF50, #388E3C); /* Gradasi hijau */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid #2C6E3F;
+        }
+    
+        /* Gaya untuk kontainer */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    
+        /* Gaya untuk judul */
+        .header h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+    
+        /* Gaya untuk paragraf */
+        .header p {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    
+        /* Responsif untuk perangkat kecil */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+    
+            .header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card animated-hover">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4">Unggah Gambar Daun Jagung</h3>
+                        <form action="/" method="post" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="file" class="form-label">Pilih File Gambar:</label>
+                                <input type="file" name="file" id="file" accept="image/*" class="form-control" required onchange="previewImage(event)">
+                            </div>
+                            <div class="mb-3 text-center">
+                                <img id="preview" src="#" alt="" class="img-thumbnail d-none" style="max-height: 300px;">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Prediksi</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if image_path %}
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="card animated-hover">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4">Hasil Prediksi</h3>
+                        <div class="text-center mb-3">
+                            <img src="{{ image_path }}" alt="Gambar yang diunggah" class="img-thumbnail" style="max-height: 300px;">
+                        </div>
+                        <p class="text-center">Kelas yang Diprediksi: <strong>{{ predicted_label }}</strong></p>
+                        <p class="text-center">Kepercayaan: <strong>{{ probability|round(2) }}%</strong></p>
+
+                        <h5>Probabilitas untuk Setiap Kelas:</h5>
+                        <div class="progress">
+                            {% for label, prob in probabilities_dict.items() %}
+                            <div class="progress-bar bg-success" role="progressbar" style="width: {{ prob }}%;" aria-valuenow="{{ prob }}" aria-valuemin="0" aria-valuemax="100">{{ class_labels[label] }}: {{ prob|round(2) }}%</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sistem Deteksi Penyakit Daun Jagung | <a href="#">Privasi</a> | <a href="#">Ketentuan</a></p>
+        <p>Ikuti kami di <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-instagram"></i></a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function previewImage(event) {
+            const preview = document.getElementById('preview');
+            preview.src = URL.createObjectURL(event.target.files[0]);
+            preview.classList.remove('d-none');
+        }
+    </script>
 </body>
 </html>
