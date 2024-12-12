@@ -24,11 +24,11 @@ Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung 
 
 Penelitian ini bertujuan untuk:
 
-1. 🌱 **Mengembangkan metode deteksi penyakit tanaman jagung** melalui citra daun.  
-2. 🔍 **Menguji dan membandingkan akurasi** model **CNN** dan **Transfer Learning DenseNet121**.  
-3. 🚀 **Mengimplementasikan model terbaik** pada sistem deteksi penyakit berbasis citra dengan machine learning.
+1. 🌱 **Mengembangkan metode deteksi penyakit tanaman jagung** melalui citra daun menggunakan **Jupyter Notebook (IPython Notebook)** sebagai platform pemrosesan data dan pengembangan model.  
+2. 🔍 **Menguji dan membandingkan akurasi** model **Convolutional Neural Network (CNN)** dan **Transfer Learning DenseNet121** untuk mendapatkan kinerja terbaik.  
+3. 🚀 **Mengimplementasikan model terbaik** pada sistem deteksi penyakit berbasis citra menggunakan teknologi machine learning.
 
-Sistem ini dirancang untuk melakukan prediksi melalui antarmuka web menggunakan **Flask**, sebuah microframework berbasis Python. Dengan pendekatan ini, integrasi dan pengujian model dapat dilakukan secara fleksibel dan efisien.
+Sistem ini dirancang untuk memprediksi penyakit melalui antarmuka web yang dibangun menggunakan **Flask**, sebuah microframework berbasis Python. Pendekatan ini memungkinkan integrasi yang mulus dan pengujian model secara fleksibel serta efisien.
 
 ---
 
