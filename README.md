@@ -20,50 +20,62 @@ Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung 
 
 ---
 
-## Deskripsi Proyek
+# 📜 **Deskripsi Proyek**
 
 Penelitian ini bertujuan untuk:
 
-1. Mengembangkan metode deteksi penyakit tanaman jagung melalui citra daun.
-2. Menguji dan membandingkan akurasi model **CNN** dan **Model Transfer Learning DenseNet121**.
-3. Mengimplementasikan model dengan akurasi tertinggi pada sistem deteksi penyakit berbasis citra.
+1. 🌱 **Mengembangkan metode deteksi penyakit tanaman jagung** melalui citra daun.  
+2. 🔍 **Menguji dan membandingkan akurasi** model **CNN** dan **Transfer Learning DenseNet121**.  
+3. 🚀 **Mengimplementasikan model terbaik** pada sistem deteksi penyakit berbasis citra.
 
-Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrograman **Python** untuk memungkinkan integrasi dan pengujian model deteksi penyakit secara fleksibel.
+🛠️ Sistem ini dibangun menggunakan microframework **Flask** dengan bahasa pemrograman **Python** untuk memungkinkan integrasi dan pengujian model secara fleksibel.
 
 ---
 
-## Pengumpulan Data
+# 📊 **Pengumpulan Data**
 
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 
-- **5,368 gambar** dan **10 video** daun jagung.  
+- 🖼️ **5,368 gambar** dan 🎥 **10 video** daun jagung.  
 - Data diklasifikasikan ke dalam 4 kelas:  
-  - **Hawar Daun** (Blight).  
-  - **Bercak Daun** (Leaf Spot).  
-  - **Karat** (Rust).  
-  - **Sehat** (Healthy). 
-  
----
-
-### **Bukti Observasi Langsung**
-![Bukti Observasi](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi%20-%20Copy.jpg)
+  - 🍂 **Hawar Daun** (*Blight*).  
+  - 🍃 **Bercak Daun** (*Leaf Spot*).  
+  - 🌾 **Karat** (*Rust*).  
+  - 🌿 **Sehat** (*Healthy*).
 
 ---
 
-## **Fitur Utama**
+### 📸 **Bukti Observasi Langsung**
+<div align="center">
+  <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi%20-%20Copy.jpg" 
+       alt="Bukti Observasi" 
+       width="70%" 
+       style="border: 2px solid #4CAF50; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  <p style="font-style: italic; color: #555;">*Gambar hasil survei langsung di ladang jagung masyarakat*</p>
+</div>
 
-- **Deteksi Penyakit Daun Jagung**: Mengidentifikasi penyakit seperti _Hawar Daun_, _Bercak Daun_, dan _Karat_.  
-- **Pemrosesan Citra**: Melakukan augmentasi data untuk memperkaya dataset dan mencegah overfitting.  
-- **Model Machine Learning**:  
+---
+
+# 🌟 **Fitur Utama**
+
+- 🔎 **Deteksi Penyakit Daun Jagung**:  
+  Identifikasi penyakit seperti *Hawar Daun*, *Bercak Daun*, dan *Karat*.  
+- 🖼️ **Pemrosesan Citra**:  
+  Melakukan augmentasi data untuk memperkaya dataset dan mencegah overfitting.  
+- 🤖 **Model Machine Learning**:  
   - **Convolutional Neural Network (CNN)**  
   - **Transfer Learning DenseNet121**  
-- **HyperParamter Tuning**
-- **Evaluasi Model**:  
+- 🎛️ **Hyperparameter Tuning**:  
+  Menyesuaikan parameter untuk optimasi kinerja model.  
+- 📈 **Evaluasi Model**:  
   Menggunakan metrik seperti **precision**, **recall**, **F1-score**, dan **confusion matrix**.  
-- **Visualisasi Data Performance**: Menyediakan insight dari hasil analisis dataset.  
-- **Prediksi**: Melakukan prediksi terhadap gambar Test dengan menggunakan model yang telah dilatih
+- 📊 **Visualisasi Kinerja Model**:  
+  Menyediakan insight dari hasil analisis dataset.  
+- 🎯 **Prediksi Akurat**:  
+  Melakukan prediksi terhadap gambar uji dengan model yang telah dilatih.
 
 ---
+
 
 ## Teknologi yang Digunakan
 
