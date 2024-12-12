@@ -86,7 +86,6 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
     <img src="https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Framework-Flask-green?logo=flask&logoColor=white" />
     <img src="https://img.shields.io/badge/Algorithm-CNN-orange?logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/Algorithm-SVM-blue?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-TensorFlow-red?logo=tensorflow&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-OpenCV-lightblue?logo=opencv&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-Matplotlib-005C4B?logo=matplotlib&logoColor=white" />
