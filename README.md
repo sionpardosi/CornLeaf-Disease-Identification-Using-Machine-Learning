@@ -1,11 +1,22 @@
-# Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning
+# 🌽 Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning
 
-*Identification of corn leaf diseases using machine learning technology* 
+*Identification of Corn Leaf Diseases Using Machine Learning Technology*
 
-Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
+Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat:
 
-Berikut adalah visualisasi prediksi sistem yang telah dikembangkan:  
-![Video Prediksi](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/videopredict-ezgif.com-video-to-gif-converter.gif)
+- Mendeteksi penyakit daun jagung secara otomatis dan cepat.
+- Meningkatkan efisiensi serta akurasi dalam diagnosis penyakit di lapangan.
+
+---
+
+## 🌟 **Visualisasi Prediksi Sistem**
+> Berikut adalah hasil prediksi dari sistem yang telah dikembangkan. Sistem ini mampu mengidentifikasi penyakit daun jagung dengan akurasi tinggi, memberikan diagnosa cepat secara real-time.
+
+<div align="center">
+  <a href="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/videopredict-ezgif.com-video-to-gif-converter.gif">
+    <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/videopredict-ezgif.com-video-to-gif-converter.gif" alt="Video Prediksi" width="70%" style="border: 2px solid #4CAF50; border-radius: 8px;">
+  </a>
+</div>
 
 ---
 
