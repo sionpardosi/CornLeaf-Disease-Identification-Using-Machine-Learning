@@ -233,7 +233,7 @@ Model **DenseNet121** menggunakan pendekatan transfer learning, memanfaatkan bob
 
 <p align="center">
   <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model%20denseNet121.png" alt="Arsitektur Model Transfer Learning DenseNet121" width="80%">
-  <p style="font-style: italic; color: #555;">*Visualisasi arsitektur model DenseNet121 selengkapnya dapat dilihat di kode app.ipynb*</p>
+  <p style="font-style: italic; color: #555;">*Visualisasi lengkap arsitektur model DenseNet121 dapat ditemukan dalam kode pada file app.ipynb.*</p>
 </p>
 
 ---
