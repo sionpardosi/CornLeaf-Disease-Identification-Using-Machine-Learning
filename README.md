@@ -125,7 +125,9 @@ Proses preprocessing bertujuan untuk menyiapkan gambar dengan format yang optima
 
 Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi:
 
-<div style="max-height: 300px; overflow-y: scroll; padding-right: 10px;">
+<details>
+<summary>Teknik Augmentasi</summary>
+
 1. **Outputs per Training Example**  
    - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
 
@@ -155,7 +157,7 @@ Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko over
 
 10. **Histogram Equalization & Median Filtering**  
     - Teknik ini digunakan untuk meningkatkan kualitas visual gambar.
-</div>
+</details>
 
 ### **Manfaat Teknik Ini**
 
