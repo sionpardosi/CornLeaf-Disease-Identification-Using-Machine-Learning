@@ -213,8 +213,6 @@ class_labels = {0: 'Bercak', 1: 'Hawar', 2: 'Karat', 3: 'Sehat'}
 
 ---
 
----
-
 # **Arsitektur Model CNN Kustom**
 
 _Identifikasi Jenis Penyakit Tanaman pada Daun Jagung_
@@ -235,6 +233,7 @@ Model **DenseNet121** menggunakan pendekatan transfer learning, memanfaatkan bob
 
 <p align="center">
   <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model%20denseNet121.png" alt="Arsitektur Model Transfer Learning DenseNet121" width="80%">
+    <p style="font-style: italic; color: #555;">*Gambar hasil survei langsung di ladang jagung masyarakat*</p>
 </p>
 
 ---
