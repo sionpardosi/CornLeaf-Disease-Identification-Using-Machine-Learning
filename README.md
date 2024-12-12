@@ -152,9 +152,7 @@ Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko over
 10. **Histogram Equalization & Median Filtering**  
     - Teknik ini digunakan untuk meningkatkan kualitas visual gambar.
 
----
-
-## **Manfaat Teknik Ini**
+### **Manfaat Teknik Ini**
 
 Dengan preprocessing dan augmentasi yang cermat:
 - Dataset menjadi lebih **kaya** dan **beragam**.  
