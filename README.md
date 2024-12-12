@@ -86,14 +86,13 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
     <img src="https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Framework-Flask-green?logo=flask&logoColor=white" />
     <img src="https://img.shields.io/badge/Algorithm-CNN-orange?logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/Algorithm-Transfer%20Learning-yellow?logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/Model-DenseNet121-lightgray?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-TensorFlow-red?logo=tensorflow&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-OpenCV-lightblue?logo=opencv&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-Matplotlib-005C4B?logo=matplotlib&logoColor=white" />
     <img src="https://img.shields.io/badge/Tool-Jupyter%20Notebook-FFD43B?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Tool-Google%20Colab-FF6F00?logo=googlecolab&logoColor=white" />
-    <img src="https://img.shields.io/badge/Editor-Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white" />
-    <img src="https://img.shields.io/badge/Algorithm-Transfer%20Learning-yellow?logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/Model-DenseNet121-lightgray?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Tool-Roboflow-01A9C4?logo=roboflow&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-Numpy-013243?logo=numpy&logoColor=white" />
     <img src="https://img.shields.io/badge/Library-Pandas-150458?logo=pandas&logoColor=white" />
