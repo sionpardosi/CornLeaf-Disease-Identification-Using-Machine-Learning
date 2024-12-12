@@ -1,6 +1,6 @@
 # 🌽 Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning
 
-*Identification of Corn Leaf Diseases Using Machine Learning Technology*
+_Identification of Corn Leaf Diseases Using Machine Learning Technology_
 
 Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat:
 
@@ -10,6 +10,7 @@ Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung 
 ---
 
 # **Visualisasi Prediksi Sistem**
+
 > Berikut adalah hasil prediksi dari sistem yang telah dikembangkan. Sistem ini mampu mengidentifikasi penyakit daun jagung dengan akurasi tinggi, memberikan diagnosa cepat secara real-time.
 
 <div align="center">
@@ -24,8 +25,8 @@ Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung 
 
 Penelitian ini bertujuan untuk:
 
-1. 🌱 **Mengembangkan metode deteksi penyakit tanaman jagung** melalui citra daun menggunakan **Jupyter Notebook (IPython Notebook)** sebagai platform pemrosesan data dan pengembangan model.  
-2. 🔍 **Menguji dan membandingkan akurasi** model **Convolutional Neural Network (CNN)** dan **Transfer Learning DenseNet121** untuk mendapatkan kinerja terbaik.  
+1. 🌱 **Mengembangkan metode deteksi penyakit tanaman jagung** melalui citra daun menggunakan **Jupyter Notebook (IPython Notebook)** sebagai platform pemrosesan data dan pengembangan model.
+2. 🔍 **Menguji dan membandingkan akurasi** model **Convolutional Neural Network (CNN)** dan **Transfer Learning DenseNet121** untuk mendapatkan kinerja terbaik.
 3. 🚀 **Mengimplementasikan model terbaik** pada sistem deteksi penyakit berbasis citra menggunakan teknologi machine learning.
 
 Sistem ini dirancang untuk memprediksi penyakit melalui antarmuka web yang dibangun menggunakan **Flask**, sebuah microframework berbasis Python. Pendekatan ini memungkinkan integrasi yang mulus dan pengujian model secara fleksibel serta efisien.
@@ -36,16 +37,17 @@ Sistem ini dirancang untuk memprediksi penyakit melalui antarmuka web yang diban
 
 Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di ladang jagung masyarakat, menghasilkan:
 
-- 🖼️ **5,368 gambar** dan 🎥 **10 video** daun jagung.  
-- Data diklasifikasikan ke dalam 4 kelas:  
-  - 🍂 **Hawar Daun** (*Blight*).  
-  - 🍃 **Bercak Daun** (*Leaf Spot*).  
-  - 🌾 **Karat** (*Rust*).  
-  - 🌿 **Sehat** (*Healthy*).
+- 🖼️ **5,368 gambar** dan 🎥 **10 video** daun jagung.
+- Data diklasifikasikan ke dalam 4 kelas:
+  - 🍂 **Hawar Daun** (_Blight_).
+  - 🍃 **Bercak Daun** (_Leaf Spot_).
+  - 🌾 **Karat** (_Rust_).
+  - 🌿 **Sehat** (_Healthy_).
 
 ---
 
 ### 📸 **Bukti Observasi Langsung**
+
 <div align="center">
   <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Requirement/observasi%20-%20Copy.jpg" 
        alt="Bukti Observasi" 
@@ -59,27 +61,27 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 # 🌟 **Fitur Utama**
 
 - 🔎 **Deteksi Penyakit Daun Jagung**:  
-  Identifikasi penyakit seperti *Hawar Daun*, *Bercak Daun*, dan *Karat*.  
+  Identifikasi penyakit seperti _Hawar Daun_, _Bercak Daun_, dan _Karat_.
 - 🖼️ **Pemrosesan Citra**:  
-  Melakukan augmentasi data untuk memperkaya dataset dan mencegah overfitting.  
-- 🤖 **Model Machine Learning**:  
-  - **Convolutional Neural Network (CNN)**  
-  - **Transfer Learning DenseNet121**  
+  Melakukan augmentasi data untuk memperkaya dataset dan mencegah overfitting.
+- 🤖 **Model Machine Learning**:
+  - **Convolutional Neural Network (CNN)**
+  - **Transfer Learning DenseNet121**
 - 🎛️ **Hyperparameter Tuning**:  
-  Menyesuaikan parameter untuk optimasi kinerja model.  
+  Menyesuaikan parameter untuk optimasi kinerja model.
 - 📈 **Evaluasi Model**:  
-  Menggunakan metrik seperti **precision**, **recall**, **F1-score**, dan **confusion matrix**.  
+  Menggunakan metrik seperti **precision**, **recall**, **F1-score**, dan **confusion matrix**.
 - 📊 **Visualisasi Kinerja Model**:  
-  Menyediakan insight dari hasil analisis dataset.  
+  Menyediakan insight dari hasil analisis dataset.
 - 🎯 **Prediksi Akurat**:  
   Melakukan prediksi terhadap gambar uji dengan model yang telah dilatih.
 
 ---
 
-
 ## Teknologi yang Digunakan
 
 #### **Tools:**
+
 <p>
     <img src="https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Framework-Flask-green?logo=flask&logoColor=white" />
@@ -106,12 +108,13 @@ Untuk memastikan gambar dalam format yang sesuai dan meningkatkan akurasi model,
 Proses preprocessing bertujuan untuk menyiapkan gambar dengan format yang optimal. Teknik yang digunakan meliputi:
 
 1. **Auto-Orient**  
-   Menyesuaikan orientasi gambar agar tidak terbalik.  
+   Menyesuaikan orientasi gambar agar tidak terbalik.
 
 2. **Static Crop**  
-   Memotong gambar untuk memperkecil fokus:  
-   - **Horizontal Region**: Memotong 25%-75% bagian horizontal.  
-   - **Vertical Region**: Memotong 27%-75% bagian vertikal.  
+   Memotong gambar untuk memperkecil fokus:
+
+   - **Horizontal Region**: Memotong 25%-75% bagian horizontal.
+   - **Vertical Region**: Memotong 27%-75% bagian vertikal.
 
 3. **Resize**  
    Mengubah ukuran gambar menjadi **640x640 piksel** agar konsisten dengan input model.
@@ -122,73 +125,83 @@ Proses preprocessing bertujuan untuk menyiapkan gambar dengan format yang optima
 
 Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi:
 
-1. **Outputs per Training Example**  
-   - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.  
+1. **Outputs per Training Example**
 
-2. **Flip Horizontal**  
-   - Membalik gambar secara horizontal untuk menambah variasi orientasi.  
+   - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
 
-3. **Grayscale**  
-   - Menerapkan filter grayscale pada **15% gambar** untuk menangkap pola warna yang netral.  
+2. **Flip Horizontal**
 
-4. **Hue**  
-   - Menyesuaikan hue dalam rentang **-25° hingga +25°**.  
+   - Membalik gambar secara horizontal untuk menambah variasi orientasi.
 
-5. **Saturation**  
-   - Mengubah saturasi warna dalam rentang **-25% hingga +25%**.  
+3. **Grayscale**
 
-6. **Brightness**  
-   - Menyesuaikan kecerahan gambar dalam rentang **-25% hingga +25%**.  
+   - Menerapkan filter grayscale pada **15% gambar** untuk menangkap pola warna yang netral.
 
-7. **Exposure**  
-   - Mengatur exposure dalam rentang **-12% hingga +12%**.  
+4. **Hue**
 
-8. **Crop**  
-   - Melakukan pemotongan acak untuk menghasilkan variasi gambar.  
+   - Menyesuaikan hue dalam rentang **-25° hingga +25°**.
 
-9. **Rotasi 90 Derajat**  
-   - Memutar gambar sebesar **90°** untuk meningkatkan orientasi data.  
+5. **Saturation**
 
-10. **Histogram Equalization & Median Filtering**  
+   - Mengubah saturasi warna dalam rentang **-25% hingga +25%**.
+
+6. **Brightness**
+
+   - Menyesuaikan kecerahan gambar dalam rentang **-25% hingga +25%**.
+
+7. **Exposure**
+
+   - Mengatur exposure dalam rentang **-12% hingga +12%**.
+
+8. **Crop**
+
+   - Melakukan pemotongan acak untuk menghasilkan variasi gambar.
+
+9. **Rotasi 90 Derajat**
+
+   - Memutar gambar sebesar **90°** untuk meningkatkan orientasi data.
+
+10. **Histogram Equalization & Median Filtering**
     - Teknik ini digunakan untuk meningkatkan kualitas visual gambar.
 
 ### **Manfaat Teknik Ini**
 
 Dengan preprocessing dan augmentasi yang cermat:
-- Dataset menjadi lebih **kaya** dan **beragam**.  
-- Model menjadi lebih **tahan terhadap overfitting** dan memiliki **generalizability** yang lebih baik.  
+
+- Dataset menjadi lebih **kaya** dan **beragam**.
+- Model menjadi lebih **tahan terhadap overfitting** dan memiliki **generalizability** yang lebih baik.
 - Variasi gambar membantu model mengenali pola dari berbagai kondisi cahaya, warna, dan orientasi.
 
 ---
 
 ## **Visualisasi Data Gambar**
 
-Tahap visualisasi dilakukan untuk memberikan gambaran mengenai kelas-kelas yang ada dalam dataset. Hal ini bertujuan untuk memastikan distribusi data yang seimbang dan memahami karakteristik visual dari setiap kelas. Berikut adalah contoh gambar dari dataset:  
+Tahap visualisasi dilakukan untuk memberikan gambaran mengenai kelas-kelas yang ada dalam dataset. Hal ini bertujuan untuk memastikan distribusi data yang seimbang dan memahami karakteristik visual dari setiap kelas. Berikut adalah contoh gambar dari dataset:
 
-![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)  
+![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)
 
 ---
 
 ## **Penerapan Canny Edge Detection**
 
-Pada tahap ini, kami menerapkan **Canny Edge Detection** untuk memvisualisasikan tepi (edges) pada gambar daun jagung. Teknik ini membantu mengidentifikasi fitur penting pada gambar, sehingga model dapat lebih fokus pada elemen yang relevan untuk klasifikasi.  
+Pada tahap ini, kami menerapkan **Canny Edge Detection** untuk memvisualisasikan tepi (edges) pada gambar daun jagung. Teknik ini membantu mengidentifikasi fitur penting pada gambar, sehingga model dapat lebih fokus pada elemen yang relevan untuk klasifikasi.
 
-Contoh hasil Canny Edge Detection:  
+Contoh hasil Canny Edge Detection:
 
-![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)  
-
----
+![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
 
 ### **Keunggulan Teknik Visualisasi**
-1. **Visualisasi Gambar Dataset**:  
-   - Memberikan pemahaman mendalam tentang karakteristik visual dari setiap kelas.  
-   - Membantu dalam proses analisis awal dan validasi dataset.  
 
-2. **Canny Edge Detection**:  
-   - Membantu model dalam mengenali pola tepi yang signifikan pada gambar.  
-   - Meminimalkan gangguan dari fitur yang tidak relevan.  
+1. **Visualisasi Gambar Dataset**:
 
-Dengan teknik visualisasi ini, proses pelatihan model menjadi lebih efisien karena fokus pada elemen penting yang mendukung akurasi klasifikasi. 
+   - Memberikan pemahaman mendalam tentang karakteristik visual dari setiap kelas.
+   - Membantu dalam proses analisis awal dan validasi dataset.
+
+2. **Canny Edge Detection**:
+   - Membantu model dalam mengenali pola tepi yang signifikan pada gambar.
+   - Meminimalkan gangguan dari fitur yang tidak relevan.
+
+Dengan teknik visualisasi ini, proses pelatihan model menjadi lebih efisien karena fokus pada elemen penting yang mendukung akurasi klasifikasi.
 
 ---
 
@@ -200,19 +213,58 @@ class_labels = {0: 'Bercak', 1: 'Hawar', 2: 'Karat', 3: 'Sehat'}
 
 ---
 
-# Architecture Model CNN-Costum Identifikasi Jenis Penyakit Tanaman pada Daun Jagung
+---
 
-![Aksitektur Model](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model.png)
+# **Arsitektur Model CNN Kustom**
 
-# Architecture Model Transfer Learning DenseNet121 Identifikasi Jenis Penyakit Tanaman pada Daun Jagung
+_Identifikasi Jenis Penyakit Tanaman pada Daun Jagung_
 
-![Aksitektur Model](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model%20denseNet121.png)
+Arsitektur model CNN kustom dirancang untuk mengenali pola unik pada citra daun jagung, seperti tekstur, warna, dan tepi. Model ini dirancang khusus untuk kasus identifikasi penyakit pada daun jagung, dengan lapisan konvolusi dan pooling yang dioptimalkan untuk performa tinggi.
+
+<p align="center">
+  <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model.png" alt="Arsitektur Model CNN Kustom" width="80%">
+</p>
+
+---
+
+# **Arsitektur Model Transfer Learning DenseNet121**
+
+_Identifikasi Jenis Penyakit Tanaman pada Daun Jagung_
+
+Model **DenseNet121** menggunakan pendekatan transfer learning, memanfaatkan bobot awal yang telah dilatih pada dataset besar untuk meningkatkan akurasi dan efisiensi pelatihan. Arsitektur ini memungkinkan pendeteksian pola kompleks dengan lapisan dense yang saling terhubung.
+
+<p align="center">
+  <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Aksitektur%20model%20denseNet121.png" alt="Arsitektur Model Transfer Learning DenseNet121" width="80%">
+</p>
+
+---
+
+### **Perbedaan Utama Antara Model CNN Kustom dan DenseNet121**
+
+1. **Model CNN Kustom**:
+
+   - Dirancang khusus untuk dataset dan kasus penyakit tanaman jagung.
+   - Fleksibel untuk penyesuaian, tetapi membutuhkan waktu pelatihan lebih lama.
+
+2. **Model DenseNet121**:
+   - Memanfaatkan transfer learning untuk percepatan pelatihan.
+   - Lebih cocok untuk dataset kecil dengan fitur yang kompleks.
+
+---
+
+### **Keunggulan Visualisasi Arsitektur**
+
+- Memberikan pemahaman yang lebih mendalam tentang struktur model.
+- Membantu pembaca memahami aliran data dari input hingga output.
+- Gambar dengan ukuran yang diatur secara proporsional meningkatkan estetika dokumen.
+
+---
 
 ---
 
 # Evaluasi Model
 
-Model dievaluasi dengan data validasi untuk mengukur *loss* dan *accuracy*. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
+Model dievaluasi dengan data validasi untuk mengukur _loss_ dan _accuracy_. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
 
 ### **Evaluasi Model CNN-Costum pada Data Validasi (Visualisasi Validation Accuracy)**:
 
@@ -248,6 +300,7 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 ---
 
 ### **Classification Report Model CNN-Costum**:
+
 ![Hasilnya](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Classification%20Report.png)
 
 ### **Classification Report Model Tranfer Learning DenseNet121**:
@@ -269,6 +322,7 @@ Confusion Matrix digunakan untuk mengukur prediksi model vs label sebenarnya, me
 ![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Evaluasi%20Overfitting%20Validation%20Accuracy.png)
 
 ### Performance: Evaluasi Overfitting Model Transfer Learning DenseNet121
+
 ![Visualisasi Performance Evaluasi Overfitting Validation Accuracy](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20Performance%20Accuracy%20dan%20loss%20training%20dan%20validation%20DenseNet121.jpg)
 
 ---
@@ -286,6 +340,7 @@ Hasil menunjukkan bahwa kombinasi preprocessing, arsitektur CNN-Kostum, dan opti
 # Prediction
 
 ### Prediction: Predict and Visualize a Single Image
+
 Melakukan prediksi terhadap satu gambar baru menggunakan model yang telah dilatih dan visualisasikan hasil prediksi dengan label kelasnya:
 
 ![Visualisasi Prediction](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visual%20Prediction.png)
@@ -306,13 +361,16 @@ Model CNN dan **DenseNet121** telah menunjukkan potensi yang sangat baik dalam m
 - Clone repository dengan perintah:
   ```bash
   git clone https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning.git
+  ```
 
 Atau, unduh proyek dalam format ZIP melalui tombol "Code" di halaman GitHub dan ekstrak file ke direktori yang diinginkan.
 
 ## 2. Instalasi Dependensi
+
 - Masuk ke direktori proyek:
   ```bash
   cd CornLeaf-Disease-Identification-Using-Machine-Learning
+  ```
 
 ## 3. Persiapkan Dataset
 
@@ -321,10 +379,11 @@ Unduh dataset yang diperlukan dengan menggunakan Roboflow dari folder Dataset/ :
 ## 4. Menjalankan Model
 
 ⚠️ **Ingat!!!**  
-Model yang dilatih sudah disimpan, sehingga **tidak perlu melakukan pelatihan data lagi**. Anda dapat mencoba memakai model berikut:  
-- **Model_CNN_256px.keras**  
-- **Model_CNN_128px.keras**  
-- **Model_denseNet121_256px.keras**  
+Model yang dilatih sudah disimpan, sehingga **tidak perlu melakukan pelatihan data lagi**. Anda dapat mencoba memakai model berikut:
+
+- **Model_CNN_256px.keras**
+- **Model_CNN_128px.keras**
+- **Model_denseNet121_256px.keras**
 - **Model_denseNet121_128px.keras**
 
 Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
@@ -335,7 +394,7 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 
 ### Menjalankan model dan pelatihan melalui Kode .ipynb :
 
-0. **Buka Kode app.ipynb** 
+0. **Buka Kode app.ipynb**
 
 1. **Import Libraries and Modules**:
    Pastikan untuk menjalankan import semua libraries dan modul yang diperlukan di dalam kode.
@@ -355,12 +414,14 @@ Pastikan Anda memiliki salah satu dari platform berikut untuk menjalankan model:
 
 6. **Prediksi Gambar**:
    Untuk melihat hasil prediksi pada gambar tertentu, sesuaikan path gambar yang ingin Anda prediksi:
-  `img_path = 'Testing/test.jpg'  # Ganti dengan path gambar`
+   `img_path = 'Testing/test.jpg'  # Ganti dengan path gambar`
 
 ### Jika ingin menjalankan server aplikasi Flask untuk testing dan prediksi, gunakan perintah:
+
 `python app.py`
 
 ## 5. Akses Aplikasi Web
+
 Setelah aplikasi Flask berjalan, buka browser dan akses:
 http://127.0.0.1:5000/
 
