@@ -125,44 +125,37 @@ Proses preprocessing bertujuan untuk menyiapkan gambar dengan format yang optima
 
 Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi:
 
-1. **Outputs per Training Example**
-
+<div style="max-height: 300px; overflow-y: scroll; padding-right: 10px;">
+1. **Outputs per Training Example**  
    - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
 
-2. **Flip Horizontal**
-
+2. **Flip Horizontal**  
    - Membalik gambar secara horizontal untuk menambah variasi orientasi.
 
-3. **Grayscale**
-
+3. **Grayscale**  
    - Menerapkan filter grayscale pada **15% gambar** untuk menangkap pola warna yang netral.
 
-4. **Hue**
-
+4. **Hue**  
    - Menyesuaikan hue dalam rentang **-25° hingga +25°**.
 
-5. **Saturation**
-
+5. **Saturation**  
    - Mengubah saturasi warna dalam rentang **-25% hingga +25%**.
 
-6. **Brightness**
-
+6. **Brightness**  
    - Menyesuaikan kecerahan gambar dalam rentang **-25% hingga +25%**.
 
-7. **Exposure**
-
+7. **Exposure**  
    - Mengatur exposure dalam rentang **-12% hingga +12%**.
 
-8. **Crop**
-
+8. **Crop**  
    - Melakukan pemotongan acak untuk menghasilkan variasi gambar.
 
-9. **Rotasi 90 Derajat**
-
+9. **Rotasi 90 Derajat**  
    - Memutar gambar sebesar **90°** untuk meningkatkan orientasi data.
 
-10. **Histogram Equalization & Median Filtering**
+10. **Histogram Equalization & Median Filtering**  
     - Teknik ini digunakan untuk meningkatkan kualitas visual gambar.
+</div>
 
 ### **Manfaat Teknik Ini**
 
