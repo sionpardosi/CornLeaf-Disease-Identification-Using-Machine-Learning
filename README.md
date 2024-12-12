@@ -123,19 +123,11 @@ Proses preprocessing bertujuan untuk menyiapkan gambar dengan format yang optima
 
 ## **Augmentasi**
 
-Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi beberapa langkah berikut:
+Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi:
 
-- Outputs per Training Example
-- Flip Horizontal
-- Grayscale
-- Hue
-- Saturation
+<details>
+<summary>Teknik Augmentasi</summary>
 
-Untuk informasi lebih lanjut mengenai teknik augmentasi, lihat [di sini](#daftar-teknik-augmentasi).
-
-## Daftar Teknik Augmentasi
-
-<a name="daftar-teknik-augmentasi"></a>
 1. **Outputs per Training Example**  
    - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
 
@@ -165,22 +157,7 @@ Untuk informasi lebih lanjut mengenai teknik augmentasi, lihat [di sini](#daftar
 
 10. **Histogram Equalization & Median Filtering**  
     - Teknik ini digunakan untuk meningkatkan kualitas visual gambar.
-
-
-## **Augmentasi**
-
-Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Berikut adalah teknik augmentasi utama yang diterapkan dalam penelitian ini.
-
-![Diagram Augmentasi](https://example.com/augmentasi-diagram.png)
-
-Teknik lengkap augmentasi yang digunakan, lihat [di sini](#daftar-teknik-augmentasi).
-
-## Daftar Teknik Augmentasi
-
-1. **Outputs per Training Example**  
-   - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
-
-
+</details>
 
 ### **Manfaat Teknik Ini**
 
