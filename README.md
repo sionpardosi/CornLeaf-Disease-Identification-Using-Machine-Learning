@@ -238,29 +238,6 @@ Model **DenseNet121** menggunakan pendekatan transfer learning, memanfaatkan bob
 
 ---
 
-### **Perbedaan Utama Antara Model CNN Kustom dan DenseNet121**
-
-1. **Model CNN Kustom**:
-
-   - Dirancang khusus untuk dataset dan kasus penyakit tanaman jagung.
-   - Fleksibel untuk penyesuaian, tetapi membutuhkan waktu pelatihan lebih lama.
-
-2. **Model DenseNet121**:
-   - Memanfaatkan transfer learning untuk percepatan pelatihan.
-   - Lebih cocok untuk dataset kecil dengan fitur yang kompleks.
-
----
-
-### **Keunggulan Visualisasi Arsitektur**
-
-- Memberikan pemahaman yang lebih mendalam tentang struktur model.
-- Membantu pembaca memahami aliran data dari input hingga output.
-- Gambar dengan ukuran yang diatur secara proporsional meningkatkan estetika dokumen.
-
----
-
----
-
 # Evaluasi Model
 
 Model dievaluasi dengan data validasi untuk mengukur _loss_ dan _accuracy_. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
