@@ -118,6 +118,7 @@ Untuk memastikan gambar berada dalam format yang sesuai dan meningkatkan akurasi
 7. **Exposure**: Exposure disesuaikan antara **-12% hingga +12%**.
 8. **Crop**: Gambar dipotong secara acak.
 9. **90 Derajat Rotation**: Gambar diputar 90 derajat.
+10. **Histogram Equalization dan Median Filtering:** Digunakan untuk meningkatkan kualitas visual gambar.
 
 Dengan semua augmentasi ini, dataset menjadi lebih kaya dan model lebih tahan terhadap overfitting.
 
