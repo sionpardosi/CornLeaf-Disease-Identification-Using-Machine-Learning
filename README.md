@@ -80,7 +80,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 # Teknologi yang Digunakan
 
-# app.ipynb: Corn Disease Detection Using CNN and Transfer Learning
+#### **Tools:**
 
 <p>
     <img src="https://img.shields.io/badge/Language-Python-blue?logo=python&logoColor=white" />
@@ -93,20 +93,14 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
     <img src="https://img.shields.io/badge/Tool-Jupyter%20Notebook-FFD43B?logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/Tool-Google%20Colab-FF6F00?logo=googlecolab&logoColor=white" />
     <img src="https://img.shields.io/badge/Editor-Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=white" />
+    <img src="https://img.shields.io/badge/Algorithm-Transfer%20Learning-yellow?logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/Model-DenseNet121-lightgray?logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/Tool-Roboflow-01A9C4?logo=roboflow&logoColor=white" />
+    <img src="https://img.shields.io/badge/Library-Numpy-013243?logo=numpy&logoColor=white" />
+    <img src="https://img.shields.io/badge/Library-Pandas-150458?logo=pandas&logoColor=white" />
 </p>
 
-## Description
 
-This project aims to develop a machine learning model for detecting corn plant diseases using Convolutional Neural Networks (CNN) with transfer learning, specifically utilizing the DenseNet121 model. The model is trained to identify diseases like leaf spots, leaf rust, and leaf blight on corn leaves. The project utilizes various Python libraries, including TensorFlow, Keras, Pandas, and Numpy. The dataset used for training is managed through Roboflow for ease of data augmentation and preprocessing.
-
-## Technologies Used
-
-- **CNN** (Convolutional Neural Networks)
-- **Transfer Learning** (DenseNet121)
-- **Roboflow** (Dataset management and augmentation)
-- **TensorFlow** and **Keras** (Deep learning frameworks)
-- **Numpy** (Numerical operations)
-- **Pandas** (Data manipulation)
 ---
 
 # **Preprocessing dan Augmentasi Gambar dengan Roboflow & OpenCV**
