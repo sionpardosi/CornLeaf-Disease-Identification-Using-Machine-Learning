@@ -95,32 +95,71 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
 
 ---
 
-# Preprocessing dan Augmentasi Gambar dengan Roboflow & OpenCV
+# **Preprocessing dan Augmentasi Gambar dengan Roboflow & OpenCV**
 
-Untuk memastikan gambar berada dalam format yang sesuai dan meningkatkan akurasi model, kami menggunakan **Roboflow** & **OpenCV** untuk melakukan preprocessing dan augmentasi gambar secara otomatis. Berikut adalah teknik yang diterapkan:
+Untuk memastikan gambar dalam format yang sesuai dan meningkatkan akurasi model, kami menggunakan **Roboflow** dan **OpenCV** untuk melakukan preprocessing serta augmentasi gambar secara otomatis. Berikut adalah teknik yang diterapkan:
 
-### **Preprocessing**:
+---
 
-1. **Auto-Orient**: Menyesuaikan orientasi gambar agar tidak terbalik.
-2. **Static Crop**: Pemotongan gambar untuk memperkecil fokus:
-   - **Horizontal Region**: Pemotongan 25%-75% bagian horizontal.
-   - **Vertical Region**: Pemotongan 27%-75% bagian vertikal.
-3. **Resize**: Mengubah ukuran gambar menjadi **640x640** piksel.
+## **Preprocessing**
 
-### **Augmentasi**:
+Proses preprocessing bertujuan untuk menyiapkan gambar dengan format yang optimal. Teknik yang digunakan meliputi:
 
-1. **Outputs per Training Example**: Roboflow menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
-2. **Flip Horizontal**: Gambar dibalik secara horizontal.
-3. **Grayscale**: 15% gambar diterapkan filter grayscale.
-4. **Hue**: Perubahan hue antara **-25° hingga +25°**.
-5. **Saturation**: Saturasi disesuaikan antara **-25% hingga +25%**.
-6. **Brightness**: Kecerahan gambar diubah dalam rentang **-25% hingga +25%**.
-7. **Exposure**: Exposure disesuaikan antara **-12% hingga +12%**.
-8. **Crop**: Gambar dipotong secara acak.
-9. **90 Derajat Rotation**: Gambar diputar 90 derajat.
-10. **Histogram Equalization dan Median Filtering:** Digunakan untuk meningkatkan kualitas visual gambar.
+1. **Auto-Orient**  
+   Menyesuaikan orientasi gambar agar tidak terbalik.  
 
-Dengan semua augmentasi ini, dataset menjadi lebih kaya dan model lebih tahan terhadap overfitting.
+2. **Static Crop**  
+   Memotong gambar untuk memperkecil fokus:  
+   - **Horizontal Region**: Memotong 25%-75% bagian horizontal.  
+   - **Vertical Region**: Memotong 27%-75% bagian vertikal.  
+
+3. **Resize**  
+   Mengubah ukuran gambar menjadi **640x640 piksel** agar konsisten dengan input model.
+
+---
+
+## **Augmentasi**
+
+Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi:
+
+1. **Outputs per Training Example**  
+   - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.  
+
+2. **Flip Horizontal**  
+   - Membalik gambar secara horizontal untuk menambah variasi orientasi.  
+
+3. **Grayscale**  
+   - Menerapkan filter grayscale pada **15% gambar** untuk menangkap pola warna yang netral.  
+
+4. **Hue**  
+   - Menyesuaikan hue dalam rentang **-25° hingga +25°**.  
+
+5. **Saturation**  
+   - Mengubah saturasi warna dalam rentang **-25% hingga +25%**.  
+
+6. **Brightness**  
+   - Menyesuaikan kecerahan gambar dalam rentang **-25% hingga +25%**.  
+
+7. **Exposure**  
+   - Mengatur exposure dalam rentang **-12% hingga +12%**.  
+
+8. **Crop**  
+   - Melakukan pemotongan acak untuk menghasilkan variasi gambar.  
+
+9. **Rotasi 90 Derajat**  
+   - Memutar gambar sebesar **90°** untuk meningkatkan orientasi data.  
+
+10. **Histogram Equalization & Median Filtering**  
+    - Teknik ini digunakan untuk meningkatkan kualitas visual gambar.
+
+---
+
+## **Manfaat Teknik Ini**
+
+Dengan preprocessing dan augmentasi yang cermat:
+- Dataset menjadi lebih **kaya** dan **beragam**.  
+- Model menjadi lebih **tahan terhadap overfitting** dan memiliki **generalizability** yang lebih baik.  
+- Variasi gambar membantu model mengenali pola dari berbagai kondisi cahaya, warna, dan orientasi.
 
 ---
 
