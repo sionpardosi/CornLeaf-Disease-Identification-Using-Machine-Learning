@@ -1,35 +1,22 @@
-# 🌽 **Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning**
+# 🌽 Identifikasi Jenis Penyakit Tanaman pada Daun Jagung Menggunakan Teknologi Machine Learning
 
 *Identification of Corn Leaf Diseases Using Machine Learning Technology*
 
 Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat:
 
-- 🌟 **Mendeteksi penyakit daun jagung** secara otomatis dan cepat.  
-- 🚀 **Meningkatkan efisiensi dan akurasi** dalam diagnosis penyakit di lapangan.
+- Mendeteksi penyakit daun jagung secara otomatis dan cepat.
+- Meningkatkan efisiensi serta akurasi dalam diagnosis penyakit di lapangan.
 
 ---
 
-## 🎥 **Visualisasi Prediksi Sistem**  
-💡 *Sistem ini mampu mengidentifikasi penyakit daun jagung dengan tingkat akurasi tinggi. Hasil prediksi disajikan dalam visualisasi berikut:*  
+# **Visualisasi Prediksi Sistem**
+> Berikut adalah hasil prediksi dari sistem yang telah dikembangkan. Sistem ini mampu mengidentifikasi penyakit daun jagung dengan akurasi tinggi, memberikan diagnosa cepat secara real-time.
 
-<div align="center" style="padding: 20px; background-color: #f9f9f9; border-radius: 12px; border: 2px solid #4CAF50; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+<div align="center">
   <a href="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/videopredict-ezgif.com-video-to-gif-converter.gif">
-    <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/videopredict-ezgif.com-video-to-gif-converter.gif" 
-         alt="Video Prediksi" 
-         width="75%" 
-         style="border-radius: 12px; border: 3px solid #4CAF50;">
+    <img src="https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/videopredict-ezgif.com-video-to-gif-converter.gif" alt="Video Prediksi" width="70%" style="border: 2px solid #4CAF50; border-radius: 8px;">
   </a>
-  <p style="font-style: italic; color: #555;">Klik pada gambar untuk melihat lebih detail!</p>
 </div>
-
----
-
-🌟 **Manfaat Sistem**:
-- 📈 **Efisiensi tinggi**: Menghemat waktu diagnosis penyakit.  
-- 🔍 **Akurasi lebih baik**: Mengurangi kesalahan diagnosis manual.  
-- 💻 **Teknologi modern**: Membawa inovasi untuk pertanian masa depan.  
-
-> **✨ Dengan teknologi ini, petani dapat mengelola tanaman jagung dengan lebih baik, meningkatkan hasil panen, dan mengurangi kerugian akibat penyakit.**
 
 ---
 
