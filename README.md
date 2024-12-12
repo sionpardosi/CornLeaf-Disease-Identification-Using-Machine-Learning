@@ -123,41 +123,56 @@ Proses preprocessing bertujuan untuk menyiapkan gambar dengan format yang optima
 
 ## **Augmentasi**
 
-Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi:
+Augmentasi digunakan untuk memperkaya variasi dataset dan mengurangi risiko overfitting. Teknik yang diterapkan meliputi beberapa langkah berikut:
 
-<details>
-<summary>Teknik Augmentasi</summary>
-
-1. **Outputs per Training Example**  
-   - Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.
-
-2. **Flip Horizontal**  
-   - Membalik gambar secara horizontal untuk menambah variasi orientasi.
-
-3. **Grayscale**  
-   - Menerapkan filter grayscale pada **15% gambar** untuk menangkap pola warna yang netral.
-
-4. **Hue**  
-   - Menyesuaikan hue dalam rentang **-25° hingga +25°**.
-
-5. **Saturation**  
-   - Mengubah saturasi warna dalam rentang **-25% hingga +25%**.
-
-6. **Brightness**  
-   - Menyesuaikan kecerahan gambar dalam rentang **-25% hingga +25%**.
-
-7. **Exposure**  
-   - Mengatur exposure dalam rentang **-12% hingga +12%**.
-
-8. **Crop**  
-   - Melakukan pemotongan acak untuk menghasilkan variasi gambar.
-
-9. **Rotasi 90 Derajat**  
-   - Memutar gambar sebesar **90°** untuk meningkatkan orientasi data.
-
-10. **Histogram Equalization & Median Filtering**  
-    - Teknik ini digunakan untuk meningkatkan kualitas visual gambar.
-</details>
+<div style="overflow-x:auto;">
+  <table border="1">
+    <tr>
+      <th>Teknik</th>
+      <th>Deskripsi</th>
+    </tr>
+    <tr>
+      <td>**Outputs per Training Example**</td>
+      <td>Menghasilkan **3 output gambar** untuk setiap gambar dalam dataset.</td>
+    </tr>
+    <tr>
+      <td>**Flip Horizontal**</td>
+      <td>Membalik gambar secara horizontal untuk menambah variasi orientasi.</td>
+    </tr>
+    <tr>
+      <td>**Grayscale**</td>
+      <td>Menerapkan filter grayscale pada **15% gambar** untuk menangkap pola warna yang netral.</td>
+    </tr>
+    <tr>
+      <td>**Hue**</td>
+      <td>Menyesuaikan hue dalam rentang **-25° hingga +25°**.</td>
+    </tr>
+    <tr>
+      <td>**Saturation**</td>
+      <td>Mengubah saturasi warna dalam rentang **-25% hingga +25%**.</td>
+    </tr>
+    <tr>
+      <td>**Brightness**</td>
+      <td>Menyesuaikan kecerahan gambar dalam rentang **-25% hingga +25%**.</td>
+    </tr>
+    <tr>
+      <td>**Exposure**</td>
+      <td>Mengatur exposure dalam rentang **-12% hingga +12%**.</td>
+    </tr>
+    <tr>
+      <td>**Crop**</td>
+      <td>Melakukan pemotongan acak untuk menghasilkan variasi gambar.</td>
+    </tr>
+    <tr>
+      <td>**Rotasi 90 Derajat**</td>
+      <td>Memutar gambar sebesar **90°** untuk meningkatkan orientasi data.</td>
+    </tr>
+    <tr>
+      <td>**Histogram Equalization & Median Filtering**</td>
+      <td>Teknik ini digunakan untuk meningkatkan kualitas visual gambar.</td>
+    </tr>
+  </table>
+</div>
 
 ### **Manfaat Teknik Ini**
 
