@@ -9,7 +9,7 @@ Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung 
 
 ---
 
-## 🌟 **Visualisasi Prediksi Sistem**
+# **Visualisasi Prediksi Sistem**
 > Berikut adalah hasil prediksi dari sistem yang telah dikembangkan. Sistem ini mampu mengidentifikasi penyakit daun jagung dengan akurasi tinggi, memberikan diagnosa cepat secara real-time.
 
 <div align="center">
