@@ -4,6 +4,9 @@
 
 Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat mendeteksi penyakit daun jagung secara otomatis dan cepat, meningkatkan efisiensi serta akurasi dalam diagnosis penyakit daun jagung di lapangan.
 
+Berikut adalah visualisasi prediksi sistem yang telah dikembangkan:  
+![Video Prediksi](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/videopredict-ezgif.com-video-to-gif-converter.gif)
+
 ---
 
 ## Deskripsi Proyek
