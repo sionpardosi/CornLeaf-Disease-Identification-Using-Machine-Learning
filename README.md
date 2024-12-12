@@ -161,18 +161,34 @@ Dengan preprocessing dan augmentasi yang cermat:
 
 ---
 
-### Visualisasi Data Gambar
+## **Visualisasi Data Gambar**
 
-Pada tahap ini, kami memvisualisasikan beberapa gambar dari dataset untuk memberikan gambaran mengenai kelas-kelas yang ada:
+Tahap visualisasi dilakukan untuk memberikan gambaran mengenai kelas-kelas yang ada dalam dataset. Hal ini bertujuan untuk memastikan distribusi data yang seimbang dan memahami karakteristik visual dari setiap kelas. Berikut adalah contoh gambar dari dataset:  
 
-![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)
+![Visualisasi Gambar Kelas Dataset](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Visualisasi%20gambar%20kelas%20dataset.png)  
 
+---
 
-### Penerapan Canny Edge Detection
+## **Penerapan Canny Edge Detection**
 
-Teknik **Canny Edge Detection** digunakan untuk memvisualisasikan fitur penting pada gambar daun jagung yang dapat membantu model fokus pada elemen yang relevan:
+Pada tahap ini, kami menerapkan **Canny Edge Detection** untuk memvisualisasikan tepi (edges) pada gambar daun jagung. Teknik ini membantu mengidentifikasi fitur penting pada gambar, sehingga model dapat lebih fokus pada elemen yang relevan untuk klasifikasi.  
 
-![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)
+Contoh hasil Canny Edge Detection:  
+
+![Visualisasi Edge Detection](https://github.com/sionpardosi/CornLeaf-Disease-Identification-Using-Machine-Learning/blob/main/Visualisasi%20Data/Edge%20Detection.png)  
+
+---
+
+### **Keunggulan Teknik Visualisasi**
+1. **Visualisasi Gambar Dataset**:  
+   - Memberikan pemahaman mendalam tentang karakteristik visual dari setiap kelas.  
+   - Membantu dalam proses analisis awal dan validasi dataset.  
+
+2. **Canny Edge Detection**:  
+   - Membantu model dalam mengenali pola tepi yang signifikan pada gambar.  
+   - Meminimalkan gangguan dari fitur yang tidak relevan.  
+
+Dengan teknik visualisasi ini, proses pelatihan model menjadi lebih efisien karena fokus pada elemen penting yang mendukung akurasi klasifikasi. 
 
 ---
 
