@@ -98,7 +98,6 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
     <img src="https://img.shields.io/badge/Library-Pandas-150458?logo=pandas&logoColor=white" />
 </p>
 
-
 ---
 
 # **Preprocessing dan Augmentasi Gambar dengan Roboflow & OpenCV**
