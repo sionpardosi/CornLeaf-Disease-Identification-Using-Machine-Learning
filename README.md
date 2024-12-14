@@ -401,6 +401,22 @@ http://127.0.0.1:5000/
 
 Aplikasi ini akan memungkinkan Anda untuk mengupload gambar daun jagung dan melihat hasil prediksi jenis penyakit.
 
+--- 
+
+# Contribution & Feedback:
+
+#### Authors
+
+- [@Sion Pardosi](https://github.com/sionprdsi)
+- [@Bnyamin](https://github.com/Benyamin206)
+- [@Handika](https://github.com/HandikaRonny)
+- [@Sarah](https://github.com/sarahhth)
+- [@Christian](https://github.com/chris123nd)
+
+We are very open to contributions and feedback from the community. For more information or any questions, feel free to contact us via [spardosi12@gmail.com](mailto:spardosi12@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/sion-pardosi-961607254/).
+
+
+
 # License
 
 This project is licensed under the [MIT License](LICENSE).
