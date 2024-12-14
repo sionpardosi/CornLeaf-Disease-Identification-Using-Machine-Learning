@@ -405,8 +405,6 @@ Aplikasi ini akan memungkinkan Anda untuk mengupload gambar daun jagung dan meli
 
 # Contribution & Feedback:
 
-#### Authors
-
 - [@Sion Pardosi](https://github.com/sionprdsi)
 - [@Bnyamin](https://github.com/Benyamin206)
 - [@Handika](https://github.com/HandikaRonny)
