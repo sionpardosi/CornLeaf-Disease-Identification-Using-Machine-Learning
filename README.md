@@ -236,6 +236,29 @@ Model **DenseNet121** menggunakan pendekatan transfer learning, memanfaatkan bob
 
 ---
 
+# **Hyperparameter Tuning**
+
+Hyperparameter tuning adalah proses untuk menemukan kombinasi terbaik dari hyperparameter model machine learning, seperti jumlah lapisan, ukuran filter, nilai dropout, dan learning rate, agar model dapat mencapai performa terbaik. Berbeda dengan parameter yang dipelajari selama proses training (seperti weights), hyperparameter ini harus diatur sebelum model dilatih.
+
+### **Teknik yang Digunakan**:
+
+1. **Grid Search**  
+   Pendekatan sistematis untuk mencoba semua kombinasi hyperparameter yang telah ditentukan dalam ruang pencarian.
+
+2. **Random Search**  
+   Pendekatan yang memilih kombinasi hyperparameter secara acak dalam ruang pencarian untuk efisiensi waktu.
+
+3. **Hyperband**  
+   Pendekatan berbasis bandit adaptif yang fokus pada kombinasi hyperparameter yang menjanjikan dengan membatasi sumber daya pada eksperimen yang kurang efektif.
+
+### **Tujuan Hyperparameter Tuning**:
+
+- **Meningkatkan akurasi dan performa model** di dataset validasi atau testing.
+- **Menghindari overfitting atau underfitting** dengan menemukan keseimbangan konfigurasi model.
+- **Mengotomatiskan eksperimen** untuk mencari parameter yang paling efektif dalam waktu yang lebih singkat.
+
+---
+
 # Evaluasi Model
 
 Model dievaluasi dengan data validasi untuk mengukur _loss_ dan _accuracy_. Ini memberikan gambaran tentang kinerja model pada data yang tidak terlihat sebelumnya:
