@@ -1,0 +1,7 @@
+{
+    "best_val_accuracy": 0.9549180269241333,
+    "best_params": {
+        "learning_rate": 0.001,
+        "optimizer": "adam"
+    }
+}
