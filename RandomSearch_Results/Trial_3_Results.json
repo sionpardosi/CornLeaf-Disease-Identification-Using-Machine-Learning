@@ -1,0 +1,11 @@
+{
+    "trial_number": 3,
+    "parameters": {
+        "learning_rate": 0.0001,
+        "optimizer": "sgd",
+        "dropout_rate": 0.3,
+        "activation": "tanh"
+    },
+    "val_loss": 0.834824800491333,
+    "val_accuracy": 0.6372950673103333
+}
