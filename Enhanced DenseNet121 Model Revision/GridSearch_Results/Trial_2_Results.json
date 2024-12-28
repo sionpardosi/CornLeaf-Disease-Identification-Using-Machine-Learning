@@ -1,0 +1,9 @@
+{
+    "trial_number": 2,
+    "parameters": {
+        "learning_rate": 0.001,
+        "optimizer": "adamax"
+    },
+    "val_loss": 0.07073763012886047,
+    "val_accuracy": 0.9825242757797241
+}

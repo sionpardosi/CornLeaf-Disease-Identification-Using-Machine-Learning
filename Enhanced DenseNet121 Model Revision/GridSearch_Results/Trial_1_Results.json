@@ -1,0 +1,9 @@
+{
+    "trial_number": 1,
+    "parameters": {
+        "learning_rate": 0.001,
+        "optimizer": "adam"
+    },
+    "val_loss": 0.06188682094216347,
+    "val_accuracy": 0.9747572541236877
+}
