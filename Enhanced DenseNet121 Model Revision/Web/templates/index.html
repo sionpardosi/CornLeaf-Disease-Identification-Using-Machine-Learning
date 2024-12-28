@@ -1,0 +1,75 @@
+{% extends "import.html" %}
+{% block content %}
+<center>
+    <br><h2 style="color: #2c3e50; font-family: Arial, sans-serif; font-weight: bold;">Identifikasi Penyakit Daun Jagung Menggunakan Deep Learning</h2><br>
+    <form id="upload-file" method="post" enctype="multipart/form-data" style="max-width: 600px; width: 100%; padding: 20px; border: 1px solid #ecf0f1; border-radius: 8px; background-color: #f9f9f9;">
+        <label for="model-select" style="font-size: 16px; font-weight: 500; color: #34495e;">Pilih Model:</label><br>
+        <select id="model-select" name="model" class="form-control" style="padding: 10px; width: 100%; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 14px;">
+            <option value="custom_256">Custom CNN (256, 256 input shape)</option>
+            <option value="custom_128">Custom CNN (128, 128 input shape)</option>
+            <option value="densenet_256">DenseNet121 CNN (256, 256 input shape)</option>
+            <option value="densenet_128">DenseNet121 CNN (128, 128 input shape)</option>
+        </select>
+        <br><br>
+        <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg" style="padding: 10px; background-color: #27ae60; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+    </form>
+    <div class="image-section" style="display:none; margin-top: 20px; text-align: center;">
+        <img id="imagePreview" class="img-responsive" src="#" style="width: 300px; height: 300px; border-radius: 8px; border: 1px solid #ccc;" /><br><br>
+        <button type="button" class="btn btn-info btn-lg" id="btn-predict" style="background-color: #3498db; color: white; border: none; padding: 15px 30px; border-radius: 5px; font-size: 16px; cursor: pointer;">Prediksi</button>
+    </div>
+    <h4 id="loading-text" style="display: none; text-align: center; color: #3498db; font-size: 18px; font-weight: bold;">Loading...</h4>
+    <h3 id="result" style="text-align: center; color: #2c3e50; font-family: Arial, sans-serif; font-size: 20px; margin-top: 20px;">
+        <span> </span>
+    </h3>
+    <div id="class-probabilities" style="display: none; text-align: center; margin-top: 20px;">
+        <h4 style="font-size: 18px; color: #34495e; font-weight: bold;">Persentase Tiap Kelas:</h4>
+        <ul id="probability-list" style="list-style-type: none; padding: 0; font-size: 16px; color: #7f8c8d;">
+            <!-- List probability class items will be appended here -->
+        </ul>
+    </div>
+</center><br><br>
+
+<script>
+document.getElementById("btn-predict").addEventListener("click", function() {
+    let form = document.getElementById("upload-file");
+    let formData = new FormData(form);
+    let loadingText = document.getElementById("loading-text");
+    let resultText = document.getElementById("result");
+    let classProbabilitiesDiv = document.getElementById("class-probabilities");
+    let probabilityList = document.getElementById("probability-list");
+
+    loadingText.style.display = "block";  // Show loading
+    resultText.innerHTML = "";
+    classProbabilitiesDiv.style.display = "none";  // Hide class probabilities section initially
+
+    fetch("/predict", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        loadingText.style.display = "none";  // Hide loading
+        if (data.error) {
+            resultText.innerHTML = `<span style="color: red;">${data.error}</span>`;
+        } else {
+            // Display the predicted label
+            resultText.innerHTML = `Hasil Prediksi: ${data.result}`;
+            
+            // Display class probabilities
+            classProbabilitiesDiv.style.display = "block";
+            probabilityList.innerHTML = "";  // Clear previous list
+
+            for (let [label, probability] of Object.entries(data.class_probabilities)) {
+                let li = document.createElement("li");
+                li.textContent = `${label}: ${probability}`;
+                probabilityList.appendChild(li);
+            }
+        }
+    })
+    .catch(error => {
+        loadingText.style.display = "none";  // Hide loading
+        resultText.innerHTML = `<span style="color: red;">Error: ${error}</span>`;
+    });
+});
+</script>
+{% endblock %}
