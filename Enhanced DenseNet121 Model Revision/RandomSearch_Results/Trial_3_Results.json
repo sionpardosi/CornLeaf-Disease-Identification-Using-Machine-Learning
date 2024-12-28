@@ -1,0 +1,11 @@
+{
+    "trial_number": 3,
+    "parameters": {
+        "learning_rate": 0.0001,
+        "optimizer": "adamax",
+        "dropout_rate": 0.4,
+        "activation": "relu"
+    },
+    "val_loss": 0.2513979375362396,
+    "val_accuracy": 0.9320388436317444
+}
