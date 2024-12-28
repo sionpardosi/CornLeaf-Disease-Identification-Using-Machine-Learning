@@ -11,7 +11,7 @@ app.config['UPLOAD_FOLDER'] = 'static/uploads'
 app.secret_key = 'your_secret_key'
 
 # Load model
-MODEL_PATH = 'Model/Model_CNN_256px.keras'
+MODEL_PATH = 'Model/Model_CNN_256px.keras' # anda dapat memilih model apa yang ingin di uji/Testing -> seperti Model CNN atau Model DenseNet yang berada di folder 'Model'
 model = load_model(MODEL_PATH)
 
 # Label kelas
