@@ -426,6 +426,12 @@ Aplikasi ini akan memungkinkan Anda untuk mengupload gambar daun jagung dan meli
 
 --- 
 
+# Contribution & Feedback:
+
+We are very open to contributions and feedback from the community. For more information or any questions, feel free to contact us via [spardosi12@gmail.com](mailto:spardosi12@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/sion-pardosi-961607254/).
+
+--- 
+
 # License
 
 This project is licensed under the [MIT License](LICENSE).
