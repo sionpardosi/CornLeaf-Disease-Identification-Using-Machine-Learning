@@ -53,7 +53,7 @@ Dataset pada penelitian ini diperoleh melalui survei langsung dan observasi di l
        alt="Bukti Observasi" 
        width="70%" 
        style="border: 2px solid #4CAF50; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-  <p style="font-style: italic; color: #555;">*Gambar hasil survei langsung di ladang jagung masyarakat*</p>
+  <p style="font-style: italic; color: #555;">*Gambar hasil survei langsung di ladang jagung masyarakat</p>
 </div>
 
 ---
