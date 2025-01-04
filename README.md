@@ -4,7 +4,7 @@ _Identification of Corn Leaf Diseases Using Machine Learning Technology_
 
 Proyek ini bertujuan untuk mengembangkan sistem deteksi penyakit tanaman jagung melalui **citra daun** menggunakan **Convolutional Neural Network (CNN)** dan **Model Transfer Learning DenseNet121**. Dengan pendekatan ini, petani dapat:
 
-- Mendeteksi penyakit daun jagung secara otomatis dan cepat.
+- Mendeteksi penyakit daun jagung secara otomatis dan cepat,
 - Meningkatkan efisiensi serta akurasi dalam diagnosis penyakit di lapangan.
 
 ---
