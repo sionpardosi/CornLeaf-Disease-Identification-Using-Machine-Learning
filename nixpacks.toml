@@ -1,0 +1,22 @@
+# — Extend the default providers with Python — 
+providers = ["...", "python"]      # the "..." merges in what Nixpacks auto-detects :contentReference[oaicite:4]{index=4}
+
+[phases.setup]
+# Add any extra system packages if needed; "..." keeps defaults (python3, gcc, etc.)
+nixPkgs = ["...", "python3", "gcc"]
+
+[phases.install]
+# Install your pip deps from requirements.txt
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+# (Optional) build-time commands; leave empty if you have none
+cmds = []
+
+[phases.start]
+# build-phase echo; does NOT affect container ENTRYPOINT
+cmds = ["echo \"Build successful\""]
+
+# — Override the **container** ENTRYPOINT to your Flask app —
+[start]
+cmd = "gunicorn app:app"           # matches your app.py’s `app` object :contentReference[oaicite:5]{index=5}
